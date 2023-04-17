@@ -1,6 +1,16 @@
+import { useNavigate } from 'react-router'
+
 const Home = () => {
+  const navigate = useNavigate()
+  const handleClick = () => {
+    navigate('/musicals')
+  }
+  
   return (
-    <p>Home page</p>
+    <>
+      <button className='button' onClick={handleClick}>happy musicals</button>
+      <button className='button' onClick={handleClick}>sad musicals</button>
+    </>
   )
 }
 

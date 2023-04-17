@@ -4,5 +4,5 @@ from .views import MusicalListView, SingleMusicalView
 
 urlpatterns = [
     path('', MusicalListView.as_view()),
-    path('<int:pk>', SingleMusicalView.as_view()),
+    path('<int:pk>/', SingleMusicalView.as_view()),
 ]
