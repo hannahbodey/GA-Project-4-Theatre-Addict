@@ -1,5 +1,7 @@
 from django.db import models
 from django.core.validators import URLValidator
+from django.db import models
+from django.core.validators import URLValidator
 
 # Create your models here.
 class Musical(models.Model):
