@@ -14,7 +14,7 @@ class MusicalListView(APIView):
         print('get musicals end point hit')
         musicals = Musical.objects.all()
         print('musicals ->', musicals)
-        serialized_musicals = MusicalSerializer(musicals, many=True)
+        serialized_musicals = PopulatedMusicalSerializer(musicals, many=True)
         print('serialized ->', serialized_musicals)
         return Response(serialized_musicals.data)
 
