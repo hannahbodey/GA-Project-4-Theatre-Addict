@@ -1,6 +1,6 @@
 [
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 1,
   "fields": {
     "name": "Berlusconi, A New Musical",
@@ -10,11 +10,19 @@
     "picture_2": "https://media.timeout.com/images/105991585/750/422/image.jpg",
     "picture_3": "https://eghcszbxego.exactdn.com/wp-content/uploads/2023/03/Sally-Ann-Triplett-Ilda-and-Sebastien-Torkia-Silvio-Berlusconi-in-Berlusconi-A-New-Musical.-Photo-%C2%A9-Nick-Rutter-.jpg",
     "video": "https://www.youtube.com/watch?v=WdU_Sj89nPI",
-    "website": "https://southwarkplayhouse.co.uk/productions/berlusconi/#book-tickets"
+    "website": "https://southwarkplayhouse.co.uk/productions/berlusconi/#book-tickets",
+    "genre": [
+      4,
+      5,
+      7
+    ],
+    "price_range": [
+      4
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 2,
   "fields": {
     "name": "Frozen The Musical",
@@ -24,11 +32,23 @@
     "picture_2": "https://frozenthemusical.co.uk/static/8e4be09b364e4d111c9dbb0cbc7ef3ec/f70d7/header-icepalace-991.jpg",
     "picture_3": "https://frozenthemusical.co.uk/static/e186d1cc55e0c81b70d30b8fbb6fd7eb/2298e/FROZEN_1140x960px-8.jpg",
     "video": "https://www.youtube.com/watch?v=IYryppT1oP4",
-    "website": "https://booking.lwtheatres.co.uk/event/2c62fa9a-9025-ea11-a9ca-064c84cbe4ea/"
+    "website": "https://booking.lwtheatres.co.uk/event/2c62fa9a-9025-ea11-a9ca-064c84cbe4ea/",
+    "genre": [
+      2,
+      3
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 3,
   "fields": {
     "name": "Grease The Musical",
@@ -38,11 +58,24 @@
     "picture_2": "https://images.ctfassets.net/6pezt69ih962/5FtC4yBMfekO0LQqkQiCAp/a4a0e4ee8f9cdd1c389cd05a615fc7be/GreaseHeader.png",
     "picture_3": "https://suzie81.files.wordpress.com/2021/11/grease-the-musical-uk-tour-4.jpg",
     "video": "https://www.youtube.com/watch?v=9DBrVivsAf8",
-    "website": "https://ticketing.greasemusical.co.uk/tickets/series/GreaseTheMusical"
+    "website": "https://ticketing.greasemusical.co.uk/tickets/series/GreaseTheMusical",
+    "genre": [
+      1,
+      3,
+      6
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 4,
   "fields": {
     "name": "Heathers The Musical",
@@ -52,11 +85,22 @@
     "picture_2": "https://assets.playbill.com/editorial/(L-R)%20Jasmine%20Beel,%20Vivian%20Panka,%20Erin%20Caldwell,%20Maddison%20Firth%20-%20Heathers%20-%20The%20Other%20Palace%20-%20Autumn%202022%20-%20Photo%20Credit%20Pamela%20Raith.jpg",
     "picture_3": "https://149659582.v2.pressablecdn.com/wp-content/uploads/2021/10/Heathers-1500x1000_2.jpg",
     "video": "https://www.youtube.com/watch?v=EK9KJT3rK4I",
-    "website": "https://theotherpalace.co.uk/heathers/"
+    "website": "https://theotherpalace.co.uk/heathers/",
+    "genre": [
+      2,
+      3,
+      5
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 5,
   "fields": {
     "name": "Idiots Assemble: Spitting Image The Musical",
@@ -66,11 +110,22 @@
     "picture_2": "https://britishtheatre.com/wp-content/uploads/2023/02/Carrie-and-Boris-Johnson-Idiots-Assemble-Spitting-Image-Saves-the-World-credit-Mark-Senior-1024x683.jpg",
     "picture_3": "https://i.guim.co.uk/img/media/4b1077d0a69f2cd869e3ee4cb7344802701bb778/0_446_7716_4630/master/7716.jpg?width=445&quality=85&dpr=1&s=none",
     "video": "https://www.youtube.com/watch?v=zqMUbeCDpe0",
-    "website": "https://www.atgtickets.com/shows/idiots-assemble-spitting-image-the-musical/phoenix-theatre/calendar/2023-05-24"
+    "website": "https://www.atgtickets.com/shows/idiots-assemble-spitting-image-the-musical/phoenix-theatre/calendar/2023-05-24",
+    "genre": [
+      1
+    ],
+    "price_range": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 6,
   "fields": {
     "name": "Moulin Rouge The Musical",
@@ -80,11 +135,24 @@
     "picture_2": "https://static.independent.co.uk/2022/01/10/21/newFile-3.jpg?width=1200",
     "picture_3": "https://x9x6y4p2.stackpathcdn.com/wp-content/uploads/2023/01/MR-L1590575_RT-1024x620.jpg",
     "video": "https://www.youtube.com/watch?v=fgTrQXrYGCc",
-    "website": "https://www.atgtickets.com/shows/moulin-rouge-the-musical/piccadilly-theatre/calendar/2023-04-14?_ga=2.126368333.1510264610.1681483815-1563679506.1681483815&_gac=1.14290629.1681483815.CjwKCAjw8-OhBhB5EiwADyoY1fjSJ183FD_hy0rx3epPUq1N3ypx4qc4YwilbFOFdbHif-VmVNLRVxoCfy8QAvD_BwE&_gl=1*124waj6*_ga*MTU2MzY3OTUwNi4xNjgxNDgzODE1*_ga_0DXDVWG79C*MTY4MTQ4MzgxNS4xLjAuMTY4MTQ4MzgxNS42MC4wLjA."
+    "website": "https://www.atgtickets.com/shows/moulin-rouge-the-musical/piccadilly-theatre/calendar/2023-04-14?_ga=2.126368333.1510264610.1681483815-1563679506.1681483815&_gac=1.14290629.1681483815.CjwKCAjw8-OhBhB5EiwADyoY1fjSJ183FD_hy0rx3epPUq1N3ypx4qc4YwilbFOFdbHif-VmVNLRVxoCfy8QAvD_BwE&_gl=1*124waj6*_ga*MTU2MzY3OTUwNi4xNjgxNDgzODE1*_ga_0DXDVWG79C*MTY4MTQ4MzgxNS4xLjAuMTY4MTQ4MzgxNS42MC4wLjA.",
+    "genre": [
+      1,
+      2,
+      3
+    ],
+    "price_range": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 7,
   "fields": {
     "name": "Pretty Woman The Musical",
@@ -94,11 +162,24 @@
     "picture_2": "https://assets.playbill.com/editorial/5837d7246eb61ac8b0581ae6cc4f2090-7.%20PRETTY%20WOMAN%20THE%20MUSICAL.%20Danny%20Mac%20'Edward%20Lewis'%20and%20Aimie%20Atkinson%20'Vivian%20Ward'.%20Photo%20Helen%20Maybanks.JPG",
     "picture_3": "https://assets.website-files.com/627507c678e951053dc8b402/6288bff03e6eda2861c628a6_Gallery_4_PrettyWoman_1920x1080.jpg",
     "video": "https://www.youtube.com/watch?v=bvY6PWBBsAA",
-    "website": "https://www.atgtickets.com/shows/pretty-woman-the-musical/savoy-theatre/calendar/2023-04-14"
+    "website": "https://www.atgtickets.com/shows/pretty-woman-the-musical/savoy-theatre/calendar/2023-04-14",
+    "genre": [
+      1,
+      3,
+      7
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 8,
   "fields": {
     "name": "Showstopper! The Improvised Musical",
@@ -108,11 +189,22 @@
     "picture_2": "https://lwt-live.s3.eu-west-1.amazonaws.com/wp-content/uploads/2018/12/31151759/Showstoppers-1600x1000-1024x640.jpg",
     "picture_3": "https://www.whatsonstage.com/s/wos-photos-production/131882.jpg",
     "video": "https://www.youtube.com/watch?v=R6k6MXge3sA",
-    "website": "https://booking.lwtheatres.co.uk/event/b7a0189f-3bbf-ed11-842c-91823f0fdc68/#_ga=2.55486059.1186676335.1681482102-1385549204.1681482102"
+    "website": "https://booking.lwtheatres.co.uk/event/b7a0189f-3bbf-ed11-842c-91823f0fdc68/#_ga=2.55486059.1186676335.1681482102-1385549204.1681482102",
+    "genre": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "price_range": [
+      4,
+      5
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 9,
   "fields": {
     "name": "The Great British Bake Off Musical",
@@ -122,11 +214,20 @@
     "picture_2": "https://images.ctfassets.net/6pezt69ih962/6Jjo3M86j12jPq8RmQtpgV/ae842d54a10a3be1c79498dbb0028100/BakeOff-1200-171022.jpg",
     "picture_3": "https://media.timeout.com/images/105943705/image.jpg",
     "video": "https://www.youtube.com/watch?v=YP9dRG-9OYs",
-    "website": "https://tickets.delfontmackintosh.co.uk/index.asp?ShoID=3341&profile=IN5&Promo=B83"
+    "website": "https://tickets.delfontmackintosh.co.uk/index.asp?ShoID=3341&profile=IN5&Promo=B83",
+    "genre": [
+      1
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 10,
   "fields": {
     "name": "The SpongeBob Musical",
@@ -136,11 +237,22 @@
     "picture_2": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F05%2Fspongebob-2000.jpg&q=60",
     "picture_3": "https://static.whatsonstage.com/2023-04/spongeee.jpg",
     "video": "https://www.youtube.com/watch?v=EBOdor2dWfg",
-    "website": "https://tickets.southbankcentre.co.uk/calendar/125072/2023/07"
+    "website": "https://tickets.southbankcentre.co.uk/calendar/125072/2023/07",
+    "genre": [
+      1,
+      7
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 11,
   "fields": {
     "name": "TINA - The Tina Turner Musical",
@@ -150,11 +262,24 @@
     "picture_2": "https://res.cloudinary.com/solt/image/upload/v1568046069/1._Aisha_Jawando_Tina_Turner_Photo_Credit_Manuel_Harlan_nccmmd.jpg",
     "picture_3": "https://mdtheatreguide.com/wp-content/uploads/2022/10/Naomi-Rodgers-as-%E2%80%98Tina-Turner-in-the-North-American-touring-production-of-TINA-%E2%80%93-THE-TINA-TURNER-MUSICAL.-Photo-by-Matthew-Murphy-for-MurphyMade-2022-scaled.jpg",
     "video": "https://www.youtube.com/watch?v=XTGAUceXotA",
-    "website": "https://ticketing.tinathemusical.com/tickets/series/Tina?_gl=1*11hyx88*_gcl_aw*R0NMLjE2ODE0ODU2MzYuQ2p3S0NBanc4LU9oQmhCNUVpd0FEeW9ZMWVEcVdSbk15dmVpbXN1THplZm1sT0RfbDRUdjJjVnVSUmhFazkyd1g3U0xFd2d0ZFdUMkVob0NFWDRRQXZEX0J3RQ..&_ga=2.47456046.825378517.1681485636-927014795.1681485636&_gac=1.79760869.1681485636.CjwKCAjw8-OhBhB5EiwADyoY1eDqWRnMyveimsuLzefmlOD_l4Tv2cVuRRhEk92wX7SLEwgtdWT2EhoCEX4QAvD_BwE"
+    "website": "https://ticketing.tinathemusical.com/tickets/series/Tina?_gl=1*11hyx88*_gcl_aw*R0NMLjE2ODE0ODU2MzYuQ2p3S0NBanc4LU9oQmhCNUVpd0FEeW9ZMWVEcVdSbk15dmVpbXN1THplZm1sT0RfbDRUdjJjVnVSUmhFazkyd1g3U0xFd2d0ZFdUMkVob0NFWDRRQXZEX0J3RQ..&_ga=2.47456046.825378517.1681485636-927014795.1681485636&_gac=1.79760869.1681485636.CjwKCAjw8-OhBhB5EiwADyoY1eDqWRnMyveimsuLzefmlOD_l4Tv2cVuRRhEk92wX7SLEwgtdWT2EhoCEX4QAvD_BwE",
+    "genre": [
+      4,
+      5
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 12,
   "fields": {
     "name": "Winnie The Pooh - The Musical",
@@ -164,11 +289,19 @@
     "picture_2": "https://lumiere-a.akamaihd.net/v1/images/uk_winnie-the-pooh_synopsis-image_m_e0d700a2.jpeg?region=0,0,658,880",
     "picture_3": "https://www.laughingplace.com/w/wp-content/uploads/2021/10/winnie-the-pooh-musical-jake-bazel-as-pooh-chris-palmieri-as-tigger-kirsty-moon-as-piglet-and-emmanuel-elpenord-as-eeyore.jpeg",
     "video": "https://www.youtube.com/watch?v=D5Z1Fen3oI0",
-    "website": "https://book.disneytickets.co.uk/tickets/series/winniethepooh"
+    "website": "https://book.disneytickets.co.uk/tickets/series/winniethepooh",
+    "genre": [
+      7
+    ],
+    "price_range": [
+      5,
+      6,
+      7
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 13,
   "fields": {
     "name": "Matilda The Musical",
@@ -178,11 +311,23 @@
     "picture_2": "https://images.ctfassets.net/6pezt69ih962/3cqe65NwKFmOWMJCAWNnXv/05cdc1578fa2259364c7fe864c8d65d1/Matilda-1200-211122.jpg",
     "picture_3": "https://pbs.twimg.com/media/Fk45Y6QX0AAMO1F?format=jpg&name=4096x4096",
     "video": "https://www.youtube.com/watch?v=NjCosN40u94",
-    "website": "https://booking.lwtheatres.co.uk/event/11169c9e-0f0f-e711-80da-005056010001/?_ga=2.156472187.1557912966.1681486397-1340943211.1681486397"
+    "website": "https://booking.lwtheatres.co.uk/event/11169c9e-0f0f-e711-80da-005056010001/?_ga=2.156472187.1557912966.1681486397-1340943211.1681486397",
+    "genre": [
+      2,
+      5
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 14,
   "fields": {
     "name": "Mamma Mia!",
@@ -192,11 +337,23 @@
     "picture_2": "https://images.ctfassets.net/6pezt69ih962/5Tgx7sFYtHfh8qMIGszaIC/7cf8ba10f745121ea5c49965114616de/MammaMia1.png",
     "picture_3": "https://www.whatsonstage.com/dyn/photos/whatsonstage/v1finw2400x0y0w1200h607/mamma-mia-137630.jpg",
     "video": "https://www.youtube.com/watch?v=JkDKyo0JiuA",
-    "website": "https://tickets.delfontmackintosh.co.uk/index.asp?ShoID=775&profile=IN5&Promo=D70"
+    "website": "https://tickets.delfontmackintosh.co.uk/index.asp?ShoID=775&profile=IN5&Promo=D70",
+    "genre": [
+      1,
+      3
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 15,
   "fields": {
     "name": "Newsies",
@@ -206,11 +363,22 @@
     "picture_2": "https://i.guim.co.uk/img/media/bba13fae71b8bb123623f4ec8c338d21a90fc8d6/0_44_1500_900/master/1500.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=71d128f22b4ef2102afc71da2f1e13c2",
     "picture_3": "https://images.ctfassets.net/6pezt69ih962/42RFkbrs2U3398lYrqclUR/8bbd9f7d240948b12897680fc037d3da/Newsies-1200.jpg",
     "video": "https://www.youtube.com/watch?v=d2tjeBdYuOk",
-    "website": "https://tickets.newsiesthemusical.co.uk/tickets/series/NEWSIES"
+    "website": "https://tickets.newsiesthemusical.co.uk/tickets/series/NEWSIES",
+    "genre": [
+      3,
+      4,
+      5,
+      7
+    ],
+    "price_range": [
+      5,
+      6,
+      7
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 16,
   "fields": {
     "name": "Jersey Boys",
@@ -220,11 +388,24 @@
     "picture_2": "https://res.cloudinary.com/dwzhqvxaz/f_auto,q_auto,fl_progressive/v1666858498/Titles/Jersey%20Boys/2021%20-%202022/JerseyBoys_Prod_1920x1080.jpg",
     "picture_3": "https://jerseyboysmusical.co.uk/content/uploads/2022/03/Sherry-Retouch-copy.jpg",
     "video": "https://www.youtube.com/watch?v=f1R2yZItS_I",
-    "website": "https://www.atgtickets.com/shows/jersey-boys/trafalgar-theatre/calendar/2023-04-14"
+    "website": "https://www.atgtickets.com/shows/jersey-boys/trafalgar-theatre/calendar/2023-04-14",
+    "genre": [
+      1,
+      3,
+      4
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 17,
   "fields": {
     "name": "Wicked",
@@ -234,11 +415,25 @@
     "picture_2": "https://www.wickedthemusical.co.uk/wp-content/uploads/2020/02/photos_2013-2014-London-Company_photo-by-Matt-Crockett_6616_RT-Low-Res-722x406.jpg",
     "picture_3": "https://wickedthemusical.com/wp-content/uploads/2021/09/Wicked_LinguificationLibrary.jpeg",
     "video": "https://www.youtube.com/watch?v=sZXb_1q920E",
-    "website": "https://www.wickedthemusical.co.uk/book-tickets/"
+    "website": "https://www.wickedthemusical.co.uk/book-tickets/",
+    "genre": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 18,
   "fields": {
     "name": "The Book of Mormon",
@@ -248,11 +443,21 @@
     "picture_2": "https://images.ctfassets.net/6pezt69ih962/7ajeCKs1Q51faHSR4YN3UQ/12042b044794aab26ce5e02f41eed626/Mormon-1200-140921.jpg",
     "picture_3": "https://media.londontheatredirect.com/Event/TheBookOfMormon/event-detail-image_31262.jpg",
     "video": "https://www.youtube.com/watch?v=k4-eWO1xu3I",
-    "website": "https://thebookofmormonmusical.com/london/tickets/?flow=Grdl7qnq#/"
+    "website": "https://thebookofmormonmusical.com/london/tickets/?flow=Grdl7qnq#/",
+    "genre": [
+      1
+    ],
+    "price_range": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 19,
   "fields": {
     "name": "Back to the Future: The Musical",
@@ -262,11 +467,23 @@
     "picture_2": "https://www.whatsonstage.com/dyn/photos/whatsonstage/v1finw2400x0y0w1200h652/roger-bart-and-olly-dobson-in-back-to-the-future-the-147611.jpg",
     "picture_3": "https://media.timeout.com/images/105813616/image.jpg",
     "video": "https://www.youtube.com/watch?v=rwU_HLUKv98",
-    "website": "https://booking.lwtheatres.co.uk/event/7c05f941-0adb-ea11-a9ca-064c84cbe4ea/?externalId=1681488504429.902038821448&sineFbp=fb.1.1681488505101.180819465&_ga=2.171000355.268124903.1681488505-1586464351.1681488505&_gac=1.27985230.1681488505.CjwKCAjw8-OhBhB5EiwADyoY1fxf8XPcVue-SRrCcH-BWNoDC-pwII8wyVhI6Pk29AAjAnWYt7caShoCF_UQAvD_BwE"
+    "website": "https://booking.lwtheatres.co.uk/event/7c05f941-0adb-ea11-a9ca-064c84cbe4ea/?externalId=1681488504429.902038821448&sineFbp=fb.1.1681488505101.180819465&_ga=2.171000355.268124903.1681488505-1586464351.1681488505&_gac=1.27985230.1681488505.CjwKCAjw8-OhBhB5EiwADyoY1fxf8XPcVue-SRrCcH-BWNoDC-pwII8wyVhI6Pk29AAjAnWYt7caShoCF_UQAvD_BwE",
+    "genre": [
+      1,
+      5
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 20,
   "fields": {
     "name": "The Lion King",
@@ -276,11 +493,24 @@
     "picture_2": "https://lumiere-a.akamaihd.net/v1/images/tlk_characters_card_mob_m_f91466a6.jpeg?region=0,0,800,600&width=768",
     "picture_3": "https://lumiere-a.akamaihd.net/v1/images/tlk_gallery-1_img_f3096bfa.jpeg?region=0,0,2400,1350",
     "video": "https://www.youtube.com/watch?v=o_VPnwAsQDg",
-    "website": "https://www.thelionking.co.uk/london"
+    "website": "https://www.thelionking.co.uk/london",
+    "genre": [
+      3,
+      5
+    ],
+    "price_range": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 21,
   "fields": {
     "name": "The Phantom of the Opera",
@@ -290,11 +520,25 @@
     "picture_2": "https://i.guim.co.uk/img/media/ee1949fde0cf7055dc7f8f04597a70110974dbcb/59_35_4608_2766/master/4608.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d1846dae2bd2f149b0ea596b6d314d20",
     "picture_3": "https://www.theatreticketsdirect.co.uk/image/latestnews/custom/600/360/poto_theatre_tickets_direct_prod_shot_800x480_1-40694969.jpg",
     "video": "https://www.youtube.com/watch?v=HOS2x8CMt7Y",
-    "website": "https://booking.lwtheatres.co.uk/event/bc14ad9b-0933-eb11-a9ca-064c84cbe4ea?externalId=1681489023007#_ga=2.255898123.1473344242.1681489023-217240776.1681489023&_gac=1.56312409.1681489023.CjwKCAjw8-OhBhB5EiwADyoY1TzPctAbGqaHcH8JG819wNdqZITx11WA7xhsxBD5Y6-YUDiuSwn5FBoC3mQQAvD_BwE"
+    "website": "https://booking.lwtheatres.co.uk/event/bc14ad9b-0933-eb11-a9ca-064c84cbe4ea?externalId=1681489023007#_ga=2.255898123.1473344242.1681489023-217240776.1681489023&_gac=1.56312409.1681489023.CjwKCAjw8-OhBhB5EiwADyoY1TzPctAbGqaHcH8JG819wNdqZITx11WA7xhsxBD5Y6-YUDiuSwn5FBoC3mQQAvD_BwE",
+    "genre": [
+      2,
+      3,
+      5
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 22,
   "fields": {
     "name": "Les Misérables",
@@ -304,11 +548,24 @@
     "picture_2": "https://www.lesmis.com//media/images/backgrounds/london/MIS_FOH_Panel-G_1660x1660_25pc_AW(1).jpg",
     "picture_3": "https://www.whartoncenter.com/assets/img/les-mis-photo-3-121fb6ce2b.jpg",
     "video": "https://www.youtube.com/watch?v=x7xUyZQ1-3k",
-    "website": "https://tickets.delfontmackintosh.co.uk/index.asp?ShoID=22"
+    "website": "https://tickets.delfontmackintosh.co.uk/index.asp?ShoID=22",
+    "genre": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "price_range": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 23,
   "fields": {
     "name": "Guys & Dolls",
@@ -318,11 +575,26 @@
     "picture_2": "https://www.theoldglobe.org/link/000d1c5ede3b43949c3f01acd4fa1a9c.aspx?id=26736",
     "picture_3": "https://www.theoldglobe.org/link/a7809c146c8b40ce8e9d9c3ef11be727.aspx?id=26720",
     "video": "https://www.youtube.com/watch?v=EzJmS_pkOrk",
-    "website": "https://bridgetheatre.co.uk/performances/?event=13763"
+    "website": "https://bridgetheatre.co.uk/performances/?event=13763",
+    "genre": [
+      1,
+      3,
+      5,
+      6
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 24,
   "fields": {
     "name": "The Time Traveller's Wife",
@@ -332,11 +604,24 @@
     "picture_2": "https://i2-prod.cheshire-live.co.uk/incoming/article25263674.ece/ALTERNATES/s1200c/0_MGR_TCH_141022TIME_01.jpg",
     "picture_3": "https://i2-prod.cheshire-live.co.uk/incoming/article25263696.ece/ALTERNATES/s615b/0_MGR_TCH_141022TIME_02.jpg",
     "video": "https://www.youtube.com/watch?v=4hfQzL5nBmo",
-    "website": "https://ticketing.nimaxtheatres.com/tickets/series/APTTW01M?promo=WEB&_gl=1*17grs90*_ga*NTA0OTA5MTg5LjE2ODE0ODk5MTM.*_ga_NTPCXEE9GC*MTY4MTQ4OTkxMi4xLjAuMTY4MTQ4OTkxMi4wLjAuMA.."
+    "website": "https://ticketing.nimaxtheatres.com/tickets/series/APTTW01M?promo=WEB&_gl=1*17grs90*_ga*NTA0OTA5MTg5LjE2ODE0ODk5MTM.*_ga_NTPCXEE9GC*MTY4MTQ4OTkxMi4xLjAuMTY4MTQ4OTkxMi4wLjAuMA..",
+    "genre": [
+      2,
+      3,
+      5
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 25,
   "fields": {
     "name": "Cabaret",
@@ -346,11 +631,22 @@
     "picture_2": "https://images.ctfassets.net/6pezt69ih962/2fGccOIwxSJFquH3WTYHQZ/dc73d1819510962ed9d1a020e0b03210/8._CABARET._Aimee_Lou_Wood_-Sally_Bowles-_and_the_Company._Photo_Marc_Brenner.jpg",
     "picture_3": "https://images.ctfassets.net/6pezt69ih962/iId4hnXAbYRzxHh828hcg/66da378d0204e74845fbb55625f3dbe8/Cabaret-1200-300922.jpg",
     "video": "https://www.youtube.com/watch?v=N5vaMJ6-4cw",
-    "website": "https://www.atgtickets.com/shows/cabaret/kit-kat-club-at-the-playhouse/calendar/2023-04-14?_gl=1*1gavp0s*_ga*MTAxMTg2ODM3My4xNjgxNDkwMTM1*_ga_8C1ET3T8VJ*MTY4MTQ5MDEzNS4xLjEuMTY4MTQ5MDE3Ny4wLjAuMA..*_fplc*dEl1SEJhNWtMMU40bXJqNTNEcU8zazZWU0Y5cjlJdFVNaFd4cWpBWkxuQ3NaQ2VMY284SXJFJTJCNGFyenZhN2gxREtiRHhCYXdNQUR4amxRajZQUkNkVUxDJTJGQjgwbmp1QmdzWEVZWm1wNzhoQUhseGNrcmJOQiUyQlBMY0pKZXR3JTNEJTNE&_ga=2.92372632.40798527.1681490135-1011868373.1681490135"
+    "website": "https://www.atgtickets.com/shows/cabaret/kit-kat-club-at-the-playhouse/calendar/2023-04-14?_gl=1*1gavp0s*_ga*MTAxMTg2ODM3My4xNjgxNDkwMTM1*_ga_8C1ET3T8VJ*MTY4MTQ5MDEzNS4xLjEuMTY4MTQ5MDE3Ny4wLjAuMA..*_fplc*dEl1SEJhNWtMMU40bXJqNTNEcU8zazZWU0Y5cjlJdFVNaFd4cWpBWkxuQ3NaQ2VMY284SXJFJTJCNGFyenZhN2gxREtiRHhCYXdNQUR4amxRajZQUkNkVUxDJTJGQjgwbmp1QmdzWEVZWm1wNzhoQUhseGNrcmJOQiUyQlBMY0pKZXR3JTNEJTNE&_ga=2.92372632.40798527.1681490135-1011868373.1681490135",
+    "genre": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "price_range": [
+      8,
+      9,
+      7
+    ]
   }
-}, 
+},
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 26,
   "fields": {
     "name": "Everybody's Talking About Jamie",
@@ -360,11 +656,23 @@
     "picture_2": "https://media.timeout.com/images/104678812/image.jpg",
     "picture_3": "https://imaging.broadway.com/images/square-11/w800/106640-22.jpg",
     "video": "https://www.youtube.com/watch?v=p8JatUP1ltI",
-    "website": "https://www.sadlerswells.com/whats-on/everybodys-talking-about-jamie/"
+    "website": "https://www.sadlerswells.com/whats-on/everybodys-talking-about-jamie/",
+    "genre": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "price_range": [
+      8,
+      5,
+      6,
+      7
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 27,
   "fields": {
     "name": "OKLAHOMA!",
@@ -374,11 +682,22 @@
     "picture_2": "https://i.guim.co.uk/img/media/60cf09c5a25e7dd5d1130359d1bdffa4ab5b9a50/0_230_4568_2740/master/4568.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=21c518578708d8a06b09c3aafab02d3f",
     "picture_3": "https://assets-global.website-files.com/5fceb7025546e6d6304b880a/60d20c29ff4b02292a694e12_Cast%201.jpeg",
     "video": "https://www.youtube.com/watch?v=rXDk5IOUWBo",
-    "website": "https://www.oklahomawestend.com/tickets/?flow=X7iy5jkO#/?qty=1"
+    "website": "https://www.oklahomawestend.com/tickets/?flow=X7iy5jkO#/?qty=1",
+    "genre": [
+      4,
+      6
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 28,
   "fields": {
     "name": "Bonnie and Clyde",
@@ -388,11 +707,25 @@
     "picture_2": "https://i.guim.co.uk/img/media/051339d53b69b57903847b9e7cdccbb6827f2449/0_970_5210_3124/master/5210.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=c92274d0b0d717bda89c2245f0a6878e",
     "picture_3": "https://images.ctfassets.net/6pezt69ih962/5eNyVY5jJ7MCXTIfih2Yh6/924107038f587b44e7fa196d246feb8e/Bonnie-1200-280223.jpg",
     "video": "https://www.youtube.com/watch?v=28Z7PZ7e2R4",
-    "website": "https://ticketing.bonnieandclydemusical.com/tickets/series/GABAC01M?gclid=CjwKCAjw8-OhBhB5EiwADyoY1aGE9d2_nZrORTzkMbelj6hdb9srysjDPGLNrTuvnsW5C_fFzzUSIhoCEG4QAvD_BwE"
+    "website": "https://ticketing.bonnieandclydemusical.com/tickets/series/GABAC01M?gclid=CjwKCAjw8-OhBhB5EiwADyoY1aGE9d2_nZrORTzkMbelj6hdb9srysjDPGLNrTuvnsW5C_fFzzUSIhoCEG4QAvD_BwE",
+    "genre": [
+      3,
+      4,
+      5,
+      7
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 29,
   "fields": {
     "name": "Hamilton",
@@ -402,11 +735,23 @@
     "picture_2": "https://i.guim.co.uk/img/media/b5df93588386c0565177648cf41f3aff72c63400/0_217_5657_3395/master/5657.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=a917ce8d52959d36bb08ad29184e2701",
     "picture_3": "https://media.vanityfair.com/photos/575846ed1e43ab7160f25b85/master/w_1440,h_960,c_limit/Hamilton-Broadway-Phillipa-Soo-Rene%CC%81e-Elise-Goldsberry-Jasmine.jpg",
     "video": "https://www.youtube.com/watch?v=20T2a8-vlqA",
-    "website": "https://tickets.delfontmackintosh.co.uk/index.asp?ShoID=2071&profile=IN5&Promo=F49"
+    "website": "https://tickets.delfontmackintosh.co.uk/index.asp?ShoID=2071&profile=IN5&Promo=F49",
+    "genre": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "price_range": [
+      8,
+      9,
+      6,
+      7
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 30,
   "fields": {
     "name": "Six the Musical",
@@ -416,11 +761,19 @@
     "picture_2": "https://images.ctfassets.net/6pezt69ih962/1W94UmcmaNeUUQjx5DQDrx/7d6179b7212bb48261e623eec0a4f504/Six-1200-200522.png",
     "picture_3": "https://www.lep.co.uk/sttms.blob.core.windows.net/images/QVNIMTEyNDU4MjE0.jpg?width=1200&enable=upscale",
     "video": "https://www.youtube.com/watch?v=uRY_zEYslWc",
-    "website": "https://tickets.sixthemusical.com/city/2957-london/1DYC8-six-the-musical-vaudeville-theatre/"
+    "website": "https://tickets.sixthemusical.com/city/2957-london/1DYC8-six-the-musical-vaudeville-theatre/",
+    "genre": [
+      3,
+      4,
+      5
+    ],
+    "price_range": [
+      6
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 31,
   "fields": {
     "name": "Only Fools and Horses - The Musical",
@@ -430,11 +783,23 @@
     "picture_2": "https://prod-upp-image-read.ft.com/e233adc8-350d-11e9-9be1-7dc6e2dfa65e",
     "picture_3": "https://i.guim.co.uk/img/media/91db6439403c708f4f91214a31ebd50b99869f54/157_162_3928_2356/master/3928.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=7b68a008a109b68b90e0116e4d60f7b3",
     "video": "https://www.youtube.com/watch?v=-i-zO_mg6z0",
-    "website": "https://tickets.trh.co.uk/WEBPAGES/EntaWebShow/ShowPerformance.aspx"
+    "website": "https://tickets.trh.co.uk/WEBPAGES/EntaWebShow/ShowPerformance.aspx",
+    "genre": [
+      1,
+      4,
+      6
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 32,
   "fields": {
     "name": "Groundhog Day",
@@ -444,11 +809,19 @@
     "picture_2": "https://media.timeout.com/images/103467062/750/422/image.jpg",
     "picture_3": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-groundhog-day-f9cf9184-0ff9-4a14-aa4b-b1560a320263.jpg",
     "video": "https://www.youtube.com/watch?v=uaE2ovVR6JI",
-    "website": "https://oldvictheatre.queue-it.net/?c=oldvictheatre&e=tovpurchasepathway&t=https%3A%2F%2Fwww.oldvictheatre.com%2Fcalendar%2F22138%2F2023%2F05&cid=en-US"
+    "website": "https://oldvictheatre.queue-it.net/?c=oldvictheatre&e=tovpurchasepathway&t=https%3A%2F%2Fwww.oldvictheatre.com%2Fcalendar%2F22138%2F2023%2F05&cid=en-US",
+    "genre": [
+      1,
+      5
+    ],
+    "price_range": [
+      6,
+      7
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 33,
   "fields": {
     "name": "Glory Ride",
@@ -458,11 +831,21 @@
     "picture_2": "https://x9x6y4p2.stackpathcdn.com/wp-content/uploads/2022/11/The-Cast-of-Glory-Ride-The-Other-Palace-Photo-Credit-Manuel-Harlan-2-1024x620.jpg",
     "picture_3": "https://www.broadwayworld.com/ezoimgfmt/cloudimages.broadwayworld.com/upload13/2208407/tn-500_thecast(4).jpg?ezimgfmt=rs:387x226/rscb35/ngcb35/notWebP",
     "video": "https://www.youtube.com/watch?v=Uaa9Zx_6k1g",
-    "website": "https://tickets.charingcrosstheatre.co.uk/WEBPAGES/EntaWebShow/ShowPerformance.aspx"
+    "website": "https://tickets.charingcrosstheatre.co.uk/WEBPAGES/EntaWebShow/ShowPerformance.aspx",
+    "genre": [
+      2,
+      4,
+      5
+    ],
+    "price_range": [
+      4,
+      5,
+      6
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 34,
   "fields": {
     "name": "A Strange Loop",
@@ -472,11 +855,23 @@
     "picture_2": "https://images.ctfassets.net/6pezt69ih962/4RdW9cqmAuxYCzrZrciPwn/343a0303d4b7df519b481c28f2356fc0/StrangeLoop-1200-140323.png",
     "picture_3": "https://media.npr.org/assets/img/2021/12/06/026_a-strange-loop-82d62926008842d3df7bf99e2ad93d078d59b159-s1100-c50.jpg",
     "video": "https://www.youtube.com/watch?v=BqxGrPlSAzk",
-    "website": "https://www.barbican.org.uk/whats-on/2023/event/a-strange-loop"
+    "website": "https://www.barbican.org.uk/whats-on/2023/event/a-strange-loop",
+    "genre": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 35,
   "fields": {
     "name": "Ain't Too Proud",
@@ -486,11 +881,21 @@
     "picture_2": "https://static01.nyt.com/images/2019/03/22/arts/22TOPROUD-COVER/merlin_151599111_b854669f-570f-4fe8-a68d-c7f43e67fc1a-superJumbo.jpg",
     "picture_3": "https://media.timeout.com/images/105386551/image.jpg",
     "video": "https://www.youtube.com/watch?v=452ohjmo2SI",
-    "website": "https://tickets.delfontmackintosh.co.uk/index.asp?ShoID=3291"
+    "website": "https://tickets.delfontmackintosh.co.uk/index.asp?ShoID=3291",
+    "genre": [
+      4,
+      5
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 36,
   "fields": {
     "name": "Mrs. Doubtfire",
@@ -500,11 +905,25 @@
     "picture_2": "https://i2-prod.manchestereveningnews.co.uk/incoming/article25079919.ece/ALTERNATES/s1200c/0_DBR_MEN_220922Doubtfire_03.jpg",
     "picture_3": "https://pyxis.nymag.com/v1/imgs/eec/a17/230bf5daa13e877a4009f5d1b1686dad84-mrs-doubtfire.jpg",
     "video": "https://www.youtube.com/watch?v=YYBe_YL4-CU",
-    "website": "https://tixtrack.shaftesburytheatre.com/tickets/series/MRSD?_gl=1*1ylmqbt*_gcl_aw*R0NMLjE2ODE0OTQxODQuQ2p3S0NBanc4LU9oQmhCNUVpd0FEeW9ZMVIwb25DV1NsZTROU2VVYjNyRHNaY3lra1ZqVy03amE5ZGs2N2VYaWhsZ2JodnIxV1p1bS1Sb0N1M0VRQXZEX0J3RQ..*_ga*MTcxMDk0MjIxMi4xNjgxNDk0MTg0*_gid*MTQ0MjM4MDE3NS4xNjgxNDk0MTg0*_gac*Q2p3S0NBanc4LU9oQmhCNUVpd0FEeW9ZMVIwb25DV1NsZTROU2VVYjNyRHNaY3lra1ZqVy03amE5ZGs2N2VYaWhsZ2JodnIxV1p1bS1Sb0N1M0VRQXZEX0J3RS4xNjgxNDk0MTg0"
+    "website": "https://tixtrack.shaftesburytheatre.com/tickets/series/MRSD?_gl=1*1ylmqbt*_gcl_aw*R0NMLjE2ODE0OTQxODQuQ2p3S0NBanc4LU9oQmhCNUVpd0FEeW9ZMVIwb25DV1NsZTROU2VVYjNyRHNaY3lra1ZqVy03amE5ZGs2N2VYaWhsZ2JodnIxV1p1bS1Sb0N1M0VRQXZEX0J3RQ..*_ga*MTcxMDk0MjIxMi4xNjgxNDk0MTg0*_gid*MTQ0MjM4MDE3NS4xNjgxNDk0MTg0*_gac*Q2p3S0NBanc4LU9oQmhCNUVpd0FEeW9ZMVIwb25DV1NsZTROU2VVYjNyRHNaY3lra1ZqVy03amE5ZGs2N2VYaWhsZ2JodnIxV1p1bS1Sb0N1M0VRQXZEX0J3RS4xNjgxNDk0MTg0",
+    "genre": [
+      1,
+      5,
+      7
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 37,
   "fields": {
     "name": "42nd Street",
@@ -514,11 +933,22 @@
     "picture_2": "https://i.guim.co.uk/img/media/943e38607efaf8b25c54dcad1b4aecffb324c8de/0_345_4446_2667/master/4446.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d4ef338fa4087b7cc41e1cd610278c07",
     "picture_3": "https://lwt-live.s3.eu-west-1.amazonaws.com/wp-content/uploads/2018/07/13110657/homepage-musical-1600x1000.jpg",
     "video": "https://www.youtube.com/watch?v=R8Q7vcnU9nc",
-    "website": "https://www.londontheatre.co.uk/show/27028-42nd-street?utm_source=google&utm_medium=cpc&utm_campaignid=11060757766&utm_adgroupid=145317760502&utm_adid=654768190279&utm_term=42nd%20street%20musical&utm_matchtype=b&utm_campaign=TTG_LT_g_uk_acq_search_shows&utm_adgroup=Shows_42nd_Street_All&gclid=CjwKCAjw8-OhBhB5EiwADyoY1fHkWUhN_kKSwbjFuKD9K1KdwpG5E0MsE8M-kAEH84BFi7qV1GXIIxoCqi4QAvD_BwE"
+    "website": "https://www.londontheatre.co.uk/show/27028-42nd-street?utm_source=google&utm_medium=cpc&utm_campaignid=11060757766&utm_adgroupid=145317760502&utm_adid=654768190279&utm_term=42nd%20street%20musical&utm_matchtype=b&utm_campaign=TTG_LT_g_uk_acq_search_shows&utm_adgroup=Shows_42nd_Street_All&gclid=CjwKCAjw8-OhBhB5EiwADyoY1fHkWUhN_kKSwbjFuKD9K1KdwpG5E0MsE8M-kAEH84BFi7qV1GXIIxoCqi4QAvD_BwE",
+    "genre": [
+      1,
+      6
+    ],
+    "price_range": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 38,
   "fields": {
     "name": "We Will Rock You",
@@ -528,11 +958,21 @@
     "picture_2": "https://www.whatsonstage.com/dyn/photos/whatsonstage/v1finw1200x0y0w1200h607/we-will-rock-you-142488.jpg",
     "picture_3": "https://www.westendtheatre.com/wp-content/uploads/2010/08/We-Will-Rock-You-2022.jpg",
     "video": "https://www.youtube.com/watch?v=5WsZ1iD5cpM",
-    "website": "https://www.londontheatredirect.com/booking/we-will-rock-you-london-tickets/06-2023?_gl=1*k5e1ne*_up*MQ..&gclid=CjwKCAjw8-OhBhB5EiwADyoY1SLESwJ2ot1hQgWfgUKjze7rHtbaDXDAzUlJHm9205N6stdgBNnRoBoCN9sQAvD_BwE&gclsrc=aw.ds"
+    "website": "https://www.londontheatredirect.com/booking/we-will-rock-you-london-tickets/06-2023?_gl=1*k5e1ne*_up*MQ..&gclid=CjwKCAjw8-OhBhB5EiwADyoY1SLESwJ2ot1hQgWfgUKjze7rHtbaDXDAzUlJHm9205N6stdgBNnRoBoCN9sQAvD_BwE&gclsrc=aw.ds",
+    "genre": [
+      4,
+      5
+    ],
+    "price_range": [
+      8,
+      5,
+      6,
+      7
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 39,
   "fields": {
     "name": "Crazy For You",
@@ -542,11 +982,23 @@
     "picture_2": "https://i.guim.co.uk/img/media/dd2d61d4148b4266fcd148874ee59a066c8bcc23/0_515_4102_2463/master/4102.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=50e829b82e50f6182317a8672af2f911",
     "picture_3": "https://uploads-ssl.webflow.com/60620d81e340c37005c6058c/60648c56a6e5038a1e5bfda5_605d4ee6201ee5e67a25f3d8_12.jpeg",
     "video": "https://www.youtube.com/watch?v=KKJDKrzKdns",
-    "website": "https://booking.lwtheatres.co.uk/event/c1b6ba6a-ad69-ed11-83d1-e5cd89c867cc"
+    "website": "https://booking.lwtheatres.co.uk/event/c1b6ba6a-ad69-ed11-83d1-e5cd89c867cc",
+    "genre": [
+      3,
+      6
+    ],
+    "price_range": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 40,
   "fields": {
     "name": "Aspects of Love",
@@ -556,11 +1008,24 @@
     "picture_2": "https://i.guim.co.uk/img/media/cb386663ecb547f5efbdf9a9c3b29157105ebd15/0_188_1388_833/master/1388.jpg?width=700&quality=85&auto=format&fit=max&s=9fe31a2767d36a877811f806cf70df1f",
     "picture_3": "https://chicagocritic.com/wp-content/uploads/2013/03/aspects111.jpg",
     "video": "https://www.youtube.com/watch?v=Np2tqvJxbmY",
-    "website": "https://ticketing.nimaxtheatres.com/tickets/series/LYAOL01M"
+    "website": "https://ticketing.nimaxtheatres.com/tickets/series/LYAOL01M",
+    "genre": [
+      2,
+      3,
+      6
+    ],
+    "price_range": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
   }
 },
 {
-  "model": "musicals.Musical",
+  "model": "musicals.musical",
   "pk": 41,
   "fields": {
     "name": "How to Succeed in Business Without Really Trying",
@@ -570,7 +1035,14 @@
     "picture_2": "https://i.guim.co.uk/img/media/c86202aaf1bb8d5ab7151ca5ff146edbe03be5c4/0_127_4157_2495/master/4157.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=b86fa8bededff8c8bf725d5a86795517",
     "picture_3": "https://media.timeout.com/images/103815321/750/422/image.jpg",
     "video": "https://www.youtube.com/watch?v=1oyPeUdd2d4",
-    "website": "https://southwarkplayhouse.co.uk/productions/how-to-succeed-in-business-without-really-trying/#book-now"
+    "website": "https://southwarkplayhouse.co.uk/productions/how-to-succeed-in-business-without-really-trying/#book-now",
+    "genre": [
+      1
+    ],
+    "price_range": [
+      4,
+      5
+    ]
   }
 }
 ]

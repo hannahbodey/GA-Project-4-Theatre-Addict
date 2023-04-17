@@ -3,4 +3,7 @@ from django.db import models
 
 # Create your models here.
 class Price(models.Model):
-    cost = models.FloatField(max_length=10)
+    cost = models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.cost
