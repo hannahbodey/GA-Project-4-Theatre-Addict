@@ -28,11 +28,13 @@ const EditComment = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor='addComment'>Add comment here</label>
-      <input type='text' name='addComment' placeholder='Add your comment' onChange={handleChange} value={formFields.comments}/>
-      <button>Submit your comment!</button>
-    </form>
+    <div className='comments-form-container'>
+      <form className='comments-form' onSubmit={handleSubmit}>
+        {/* <label htmlFor='addComment'/> */}
+        <input className='comment-entry' type='text' name='addComment' placeholder='Join the conversation...' onChange={handleChange} value={formFields.comments} />
+        <button>Submit!</button>
+      </form>
+    </div>
   )
 }
 

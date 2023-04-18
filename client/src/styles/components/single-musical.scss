@@ -1,3 +1,98 @@
+@media (max-width: 768px) {
+  .main-container {
+    .action-image {
+      display: none;
+    }
+    .video-comments-container {
+      display: block;
+      width: 90%;
+      margin: 1rem;
+      .musical-video {
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .main-container {
+    .action-image {
+      display: none;
+    }
+    .video-comments-container {
+      display: block;
+      width: 90%;
+      margin: 1rem;
+      .musical-video {
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 901px) {
+  .video-comments-container {
+    display: flex;
+    width: 90%;
+    margin: 1rem;
+    .musical-video {
+      margin-right: 1rem;
+    }
+  }
+}
+
 .hidden {
-  display:none;
+  display: none;
+}
+
+.main-container {
+  margin: 1rem;
+}
+
+.title-logo-container {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  text-align: center;
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background: rgb(1,0,11);
+  // background: linear-gradient(90deg, rgba(1,0,11,1) 0%, rgba(168,22,22,1) 35%, rgba(254,174,0,1) 100%);
+  // border-radius: 1rem;
+  
+  // border: 0.5rem solid rgba(0,0,0,0.5);
+  .logo-image {
+    max-width: 10rem;
+    max-height: 8.5rem;
+    border-radius: 5rem;
+    // border: 0.25rem solid rgba(0,0,0,0.8);
+    box-shadow: 0 0.75rem 0.75rem rgba(0,0,0,0.8);
+    margin: 0.5rem;
+  }
+  .title-container {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    height: 9rem;
+    padding: 0.5rem;
+    background: rgba(0,0,0,0.6);
+    border-radius: 0.25rem;
+    border: 0.25rem solid rgba(0,0,0,0.1);
+  }
+}
+
+.musical-description, .user-comment {
+  background: linear-gradient(90deg, rgba(255,255,255,0.6) 0%, rgb(245, 188, 188, 0.6) 35%, rgb(239, 222, 186, 0.6) 100%);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0,0,0,0.5);
+}
+
+.musical-description {
+  font-size: larger;
+}
+
+.musical-video {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0,0,0,0.5);
 }

@@ -21,7 +21,7 @@ const LogIn = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const { data } = await axios.post('/api/auth/login/', formFields)
+      const { data } = await axios.post('/api/login/', formFields)
       localStorage.setItem('THEATRE-PROJECT-TOKEN', data.token)
       // need to navigate to previous id musical page
       navigate(from, { replace: true })

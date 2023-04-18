@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+  .comment-entry {
+    max-width: 20rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .comment-entry {
+    width: 18rem;
+  }
+}
+
+.comment-owner {
+  display: flex;
+  .user-profile-image {
+    border-radius: 1rem;
+    max-width: 2rem;
+    max-height: 2rem;
+    border: 0.15rem solid rgba(0,0,0,0.2);
+  }
+  .username-box {
+    margin-left: 0.25rem;
+    padding: 0.25rem 0;
+    // background-color: rgba(0,0,0,0.2);
+    // color: #adaaaa;
+  }
+}
+
+.comments-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0.5rem;
+}
+
+.comments {
+  overflow: scroll;
+  height: 18rem;
+}

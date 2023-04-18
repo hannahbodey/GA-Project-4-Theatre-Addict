@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams, useLocation, useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
-import Card from 'react-bootstrap/Card'
 import ReactPlayer from 'react-player/youtube'
 import Comment from './Comments'
 import EditComment from './EditComment'
@@ -49,30 +47,45 @@ const SingleMusical = () => {
 
   return (
     <main className='main-container'>
-      <h1>{musical.name}</h1>
-      <h2>{musical.theatre}</h2>
-      <p>{musical.description}</p>
-      <img src={musical.picture_1} />
-      <img src={musical.picture_2} />
-      <img src={musical.picture_3} />
-      <div className='tickets-button'>
-        <a href={musical.website}>
-          <button>Book tickets here!</button>
+      <div className='title-logo-container' style={{ backgroundImage: `url(${musical.picture_2})` }}>
+        <div className='title-container'>
+          <h1 className='musical-name'>{musical.name}</h1>
+          <h2 className='musical-location'>{musical.theatre}</h2>
+          <a className='tickets-button' href={musical.website}>
+            <button>Book tickets here!</button>
+          </a>
+        </div>
+
+        <a className='tickets-button' href={musical.website}>
+          <img className='logo-image' src={musical.picture_1} />
         </a>
       </div>
-      <ReactPlayer url={musical.video} />
-      <div className='comments'>
-        {comments.length > 0 ?
-          <Comment comments={[comments]} />
-          :
-          <button onClick={handleClick}>Be the first to comment.</button>
-        }
-        {/* Need to add the ability to add comments if you are logged in - should take you to the log in page */}
-        <button onClick={handleClick}>Add your comments here...</button>
-        <form className={isActive ? 'add-comment' : 'add-comment hidden'}>
-          <EditComment />
-        </form>
+      <div className='video-comments-container'>
+        <ReactPlayer className='musical-video' url={musical.video} />
+        <div className='comments-tickets-container'>
+          <p className='musical-description'>{musical.description}</p>
+          <div className='tickets-button'>
+
+          </div>
+          <button onClick={handleClick}>Add your comments here...</button>
+          <div className='comments'>
+            <div className={isActive ? 'add-comment' : 'add-comment hidden'}>
+              <EditComment />
+            </div>
+            {comments.length > 0 ?
+              <>
+                <Comment comments={comments} />
+                <button onClick={handleClick}>Add your comments here...</button>
+              </>
+              :
+              <button onClick={handleClick}>Be the first to comment.</button>
+            }
+            {/* Need to add the ability to add comments if you are logged in - should take you to the log in page */}
+          </div>
+        </div>
       </div>
+      <img className='action-image' src={musical.picture_2} />
+      <img className='action-image' src={musical.picture_3} />
     </main>
   )
 }

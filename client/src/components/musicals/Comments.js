@@ -1,13 +1,14 @@
-const Comment = (comments) => {
-  console.log(comments)
+const Comment = ({ comments }) => {
   return (
     comments.map(item => {
       const { id, owner, tip } = item
-      const { username, profileImage } = owner
       return (
         <div key={id}>
-          <p>{owner.username}</p>
-          <p>{tip}</p>
+          <div className='comment-owner'>
+            <img className='user-profile-image' src={owner.profile_image} alt='user profile image' />
+            <p className='username-box'>{owner.username}</p>
+          </div>
+          <p className='user-comment'>{tip}</p>
         </div>
       )
     }

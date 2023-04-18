@@ -1,5 +1,7 @@
+@import './base/common-styles.scss';
 @import './components/single-musical.scss';
+@import './components/comments-section.scss';
 
-* {
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');

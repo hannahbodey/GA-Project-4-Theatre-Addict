@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Handlee', cursive;
+  // font-family: 'Satisfy', cursive;
+  h1, h2 {
+    font-family: 'Courgette', cursive;
+    color: #fff;
+  }
+  h1 {
+    margin-left: 1rem;
+  }
+  img {
+    max-width: 100%;
+  }
+  button { 
+    border-radius: 0.25rem !important; 
+    background-color: #000;
+    color: #fff;
+    &:hover{
+      border: 0.25rem solid rgba(255, 200, 0, 0.8);
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+  }
+}
+
+.site-wrapper {
+  background-color: #a81616;
+  // opacity: 0.8;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #a81616 11px ), repeating-linear-gradient( #e08c8055, #e08c80 );
+}
+
