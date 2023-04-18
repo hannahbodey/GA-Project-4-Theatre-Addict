@@ -1,0 +1,59 @@
+
+
+.musicals {
+  height: 100vh;
+  .musical-carousel {
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // border-radius: 0.25rem;
+  }
+  .musicals-title {
+    display: flex;
+    justify-content: space-between;
+    .titles {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @extend %title-container;
+    height: 7rem;
+    h1, h2 {
+      color: #fff;
+      margin-left: 0.5rem;
+    }
+    .logo-image {
+      @extend %musical-logo;
+      margin: 0;
+      height: 5.75rem;
+    }
+  }
+  .all-musicals {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+.genres-container {
+  height: 5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0.75rem 0.75rem rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: flex-end;
+  .icon {
+    height: 4rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .logo-image {
+    max-width: 4rem;
+    max-height: 54em;
+  }
+  .all-theatres {
+    display: none;
+  }
+}

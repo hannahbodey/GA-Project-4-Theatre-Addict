@@ -61,7 +61,7 @@ const SingleMusical = () => {
         </a>
       </div>
       <div className='video-comments-container'>
-        <ReactPlayer className='musical-video' url={musical.video} />
+        <ReactPlayer className='musical-video' url={musical.video} width='100%' />
         <div className='comments-tickets-container'>
           <p className='musical-description'>{musical.description}</p>
           <div className='tickets-button'>
