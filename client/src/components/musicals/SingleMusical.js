@@ -4,6 +4,7 @@ import axios from 'axios'
 import ReactPlayer from 'react-player/youtube'
 import Comment from './Comments'
 import EditComment from './EditComment'
+import Spinner from '../common/Spinner'
 
 const SingleMusical = () => {
   const [musical, setMusical] = useState([])
@@ -47,45 +48,49 @@ const SingleMusical = () => {
 
   return (
     <main className='main-container'>
-      <div className='title-logo-container' style={{ backgroundImage: `url(${musical.picture_2})` }}>
-        <div className='title-container'>
-          <h1 className='musical-name'>{musical.name}</h1>
-          <h2 className='musical-location'>{musical.theatre}</h2>
-          <a className='tickets-button' href={musical.website}>
-            <button>Book tickets here!</button>
-          </a>
-        </div>
-
-        <a className='tickets-button' href={musical.website}>
-          <img className='logo-image' src={musical.picture_1} />
-        </a>
-      </div>
-      <div className='video-comments-container'>
-        <ReactPlayer className='musical-video' url={musical.video} width='100%' />
-        <div className='comments-tickets-container'>
-          <p className='musical-description'>{musical.description}</p>
-          <div className='tickets-button'>
-
-          </div>
-          <button onClick={handleClick}>Add your comments here...</button>
-          <div className='comments'>
-            <div className={isActive ? 'add-comment' : 'add-comment hidden'}>
-              <EditComment />
+      {musical ?
+        <>
+          <div className='title-logo-container' style={{ backgroundImage: `url(${musical.picture_2})` }}>
+            <div className='title-container'>
+              <h1 className='musical-name'>{musical.name}</h1>
+              <h2 className='musical-location'>{musical.theatre}</h2>
+              <a className='tickets-button' href={musical.website}>
+                <button className='button-common'>Book tickets here!</button>
+              </a>
             </div>
-            {comments.length > 0 ?
-              <>
-                <Comment comments={comments} />
-                <button onClick={handleClick}>Add your comments here...</button>
-              </>
-              :
-              <button onClick={handleClick}>Be the first to comment.</button>
-            }
-            {/* Need to add the ability to add comments if you are logged in - should take you to the log in page */}
+            <a className='tickets-button' href={musical.website}>
+              <img className='logo-image' src={musical.picture_1} />
+            </a>
           </div>
-        </div>
-      </div>
-      <img className='action-image' src={musical.picture_2} />
-      <img className='action-image' src={musical.picture_3} />
+          <div className='video-comments-container'>
+            <ReactPlayer className='musical-video' url={musical.video} width='100%' />
+            <div className='comments-tickets-container'>
+              <p className='musical-description'>{musical.description}</p>
+              <div className='tickets-button'>
+              </div>
+              <button className='button-common' onClick={handleClick}>Add your comments here...</button>
+              <div className='comments'>
+                <div className={isActive ? 'add-comment' : 'add-comment hidden'}>
+                  <EditComment />
+                </div>
+                {comments.length > 0 ?
+                  <>
+                    <Comment comments={comments} />
+                    <button className='button-common add-comment' onClick={handleClick}>Add your comments here...</button>
+                  </>
+                  :
+                  <button className='button-common join-conversation' onClick={handleClick}>Be the first to comment.</button>
+                }
+                {/* Need to add the ability to add comments if you are logged in - should take you to the log in page */}
+              </div>
+            </div>
+          </div>
+          <img className='action-image' src={musical.picture_2} />
+          <img className='action-image' src={musical.picture_3} />
+        </>
+        :
+        <Spinner />
+      }
     </main>
   )
 }

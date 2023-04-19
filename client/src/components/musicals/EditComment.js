@@ -32,7 +32,7 @@ const EditComment = () => {
       <form className='comments-form' onSubmit={handleSubmit}>
         {/* <label htmlFor='addComment'/> */}
         <input className='comment-entry' type='text' name='addComment' placeholder='Join the conversation...' onChange={handleChange} value={formFields.comments} />
-        <button>Submit!</button>
+        <button className='button-common'>Submit!</button>
       </form>
     </div>
   )

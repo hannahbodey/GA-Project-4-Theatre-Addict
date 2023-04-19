@@ -9,22 +9,31 @@
   img {
     max-width: 100%;
   }
-  button { 
+  .button-common { 
     border-radius: 0.25rem !important; 
     background-color: #000;
     color: #fff;
+    outline: solid 0.05rem #fff;
+    transition: all 0.6s ease-in-out, outline 0.6s ease-in-out;
     &:hover{
-      border: 0.25rem solid rgba(255, 200, 0, 0.8);
+      // border: 0.25rem solid rgba(255, 200, 0, 0.8);
       background-color: rgba(0,0,0,0.8);
+      transform: scale(1, 1.15);
+      outline-width: 0.25rem;
     }
     
   }
 }
 
 .site-wrapper {
-  background-color: #a81616;
+  // background-color: #a81616;
   // opacity: 0.8;
-  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #a81616 11px ), repeating-linear-gradient( #e08c8055, #e08c80 );
+  // background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #a81616 11px ), repeating-linear-gradient( #e08c8055, #e08c80 );
+  // background-color: #f1de9e;
+  // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23e47212' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  // background-color: #2a2102;
+  // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%237f5d17' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgba(0,0,0,1);
 }
 
 // .spinner {
