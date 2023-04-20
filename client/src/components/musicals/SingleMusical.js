@@ -28,6 +28,10 @@ const SingleMusical = () => {
     navigate('/register')
   }
 
+  const goProfile = () => {
+    navigate('/profile')
+  }
+
   useEffect(() => {
     const getMusical = async () => {
       try {
@@ -79,6 +83,7 @@ const SingleMusical = () => {
               </div>
               <div className='log-out-container'>
                 <button className='button-common' onClick={isAuthenticated ? handleClick : navigateRegister}>Add your comments here...</button>
+                {isAuthenticated && <button className='button-common' onClick={goProfile}>Edit your profile</button>}
                 {isAuthenticated && <button className='button-common' onClick={removeToken}>Log out</button>}
               </div>
               <div className='comments'>

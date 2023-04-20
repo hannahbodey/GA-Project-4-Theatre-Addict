@@ -5,7 +5,7 @@ const Comment = ({ comments }) => {
       return (
         <div key={id}>
           <div className='comment-owner'>
-            <img className='user-profile-image' src={owner.profile_image} alt='user profile image' />
+            <img className='user-profile-image' src={owner.profileimage} alt='user profile image' />
             <p className='username-box'>{owner.username}</p>
           </div>
           <p className='user-comment'>{tip}</p>

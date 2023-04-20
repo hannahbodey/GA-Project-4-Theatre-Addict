@@ -35,7 +35,7 @@ const Musicals = () => {
 
   return (
     <main className='main-container'>
-      <Carousel className='musicals-container' infiniteLoop={true} showStatus={false} useKeyboardArrows={true} transitionTime={800}>
+      <Carousel className='musicals-container' infiniteLoop={true} showStatus={false} useKeyboardArrows={true} showThumbs={false} transitionTime={800}>
         {musicals.length > 0 ?
           musicals.map((item, index) => {
             const { id, name, theatre, genre, website } = item
@@ -75,25 +75,25 @@ const Musicals = () => {
                       }
                     </div>
                     <div className='genres-container'>
-                      <TheaterComedyIcon sx={{ color: 'white', fontSize: 50 }} className='icon' />
                       {genre.length > 0 ?
                         genre.map(item => {
                           const { category } = item
                           return (
                             <>
-                              {category === 'Comedy' && <SentimentSatisfiedAltIcon sx={{ color: 'white', fontSize: 50 }} className='icon' />}
-                              {category === 'Tragedy' && <SentimentVeryDissatisfiedIcon sx={{ color: 'white', fontSize: 50 }} className='icon' />}
-                              {category === 'Romance' && <FavoriteIcon sx={{ color: 'white', fontSize: 50 }} className='icon' />}
-                              {category === 'Historical' && <HistoryEduIcon sx={{ color: 'white', fontSize: 50 }} className='icon' />}
-                              {category === 'Dramatic' && <MovieIcon sx={{ color: 'white', fontSize: 50 }} className='icon' />}
-                              {category === 'Revival' && <ElderlyIcon sx={{ color: 'white', fontSize: 50 }} className='icon' />}
-                              {category === 'New' && <ChildFriendlyIcon sx={{ color: 'white', fontSize: 50 }} className='icon' />}
+                              {category === 'Comedy' && <SentimentSatisfiedAltIcon sx={{ color: 'white', fontSize: 35 }} className='icon' />}
+                              {category === 'Tragedy' && <SentimentVeryDissatisfiedIcon sx={{ color: 'white', fontSize: 35 }} className='icon' />}
+                              {category === 'Romance' && <FavoriteIcon sx={{ color: 'white', fontSize: 35 }} className='icon' />}
+                              {category === 'Historical' && <HistoryEduIcon sx={{ color: 'white', fontSize: 35 }} className='icon' />}
+                              {category === 'Dramatic' && <MovieIcon sx={{ color: 'white', fontSize: 35 }} className='icon' />}
+                              {category === 'Revival' && <ElderlyIcon sx={{ color: 'white', fontSize: 35 }} className='icon' />}
+                              {category === 'New' && <ChildFriendlyIcon sx={{ color: 'white', fontSize: 35 }} className='icon' />}
                             </>
                           )
                         })
                         :
                         <></>
                       }
+                      <TheaterComedyIcon sx={{ color: 'white', fontSize: 50 }} className='icon' />
                     </div>
                   </div>
                 </Link>

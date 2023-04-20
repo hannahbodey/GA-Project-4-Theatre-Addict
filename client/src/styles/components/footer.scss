@@ -1,0 +1,24 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 5rem;
+  .github {
+    display: flex;
+    margin-right: 2rem;
+    align-items: center;
+  }
+  .footer-text {
+    margin-left: 1.75rem;
+    color: #000;
+    text-align:end;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .footer-logo {
+    max-height: 1.5rem;
+  }
+}
+

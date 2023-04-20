@@ -3,6 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .serializers.common import UserSerializer
+from .serializers.profileupdate import UpdatedUserSerializer
 from rest_framework.exceptions import PermissionDenied
 from rest_framework.permissions import IsAuthenticated
 from datetime import datetime, timedelta
@@ -34,11 +35,13 @@ class LogInView(APIView):
         return Response({ 'message': f'Welcome back, {user_to_login.username}', 'token': token })
     
 class ProfileView(APIView):
-    permission_classes = (IsAuthenticated, )
+    permission_classes =  (IsAuthenticated, )
     @exceptions
     def get(self, request):
+        print(request)
         user_to_display = User.objects.filter(id=request.user.id)
         serialized_user = UserSerializer(user_to_display, many=True)
+        print(serialized_user.data)
         return Response(serialized_user.data)
     
 
@@ -48,7 +51,8 @@ class UpdateProfileView(APIView):
     def put(self, request, pk):
         # user_to_update = User.objects.filter(id=request.user.id)
         user_to_update = User.objects.get(pk=pk)
-        serialized_user = UserSerializer(user_to_update, request.data, partial=True)
+        # updated_user = { *user_to_update, request.data }
+        serialized_user = UpdatedUserSerializer(user_to_update, request.data, partial=True)
         serialized_user.is_valid(raise_exception=True)
         serialized_user.save()
         return Response(serialized_user.data, status.HTTP_202_ACCEPTED)
