@@ -47,6 +47,7 @@ const LogIn = () => {
           <input type='password' name='password' placeholder='Password' onChange={handleChange} value={formFields.password} />
         </div>
         <button className='register-button button-common'>Log In</button>
+        {error && <p>Error: {error}</p>}
       </form>
       <ImageCarousel />
     </main>

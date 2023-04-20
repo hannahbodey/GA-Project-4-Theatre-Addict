@@ -103,8 +103,8 @@ const SingleMusical = () => {
               </div>
             </div>
           </div>
-          <img className='action-image' src={musical.picture_2} />
-          <img className='action-image' src={musical.picture_3} />
+          {/* <img className='action-image' src={musical.picture_2} />
+          <img className='action-image' src={musical.picture_3} /> */}
         </>
         :
         <Spinner />

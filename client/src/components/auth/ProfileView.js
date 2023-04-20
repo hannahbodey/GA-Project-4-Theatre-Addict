@@ -81,6 +81,7 @@ const Profile = () => {
               <label htmlFor='passwordconfirmation'></label>
               <input type='password' name='passwordconfirmation' placeholder='Confirm new password' onChange={handleChange} value={updatedProfile.passwordconfirmation} /> */}
               <button className='button-common register-button changes-button'>Submit your changes</button>
+              {error && <p>Error: {error}</p>}
             </form>
           </div>
         </>

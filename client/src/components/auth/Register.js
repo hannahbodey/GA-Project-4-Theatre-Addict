@@ -75,7 +75,7 @@ const Register = () => {
           <input type='password' name='passwordconfirmation' placeholder='Confirm password' onChange={handleChange} value={formFields.passwordconfirmation} />
         </div>
         <button className='register-button button-common'>Register</button>
-        {error && <p>{error}</p>}
+        {error && <p>Error: {error}</p>}
         <button onClick={navigateLogin} className='register-button button-common'>Already have an account? Log in now.</button>
       </form>
       <ImageCarousel />
