@@ -6,4 +6,4 @@ from django.core.validators import URLValidator
 class User(AbstractUser):
     username = models.CharField(max_length=15, unique=True)
     email = models.CharField(max_length=30, unique=True)
-    profile_image = models.URLField(validators=[URLValidator()], max_length=400)
+    profileimage = models.URLField(validators=[URLValidator()], max_length=400)

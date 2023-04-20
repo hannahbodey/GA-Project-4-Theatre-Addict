@@ -5,6 +5,8 @@ import ReactPlayer from 'react-player/youtube'
 import Comment from './Comments'
 import EditComment from './EditComment'
 import Spinner from '../common/Spinner'
+import { authenticatedUser, removeToken } from '../../helpers/auth'
+import BackButton from '../common/BackArrow'
 
 const SingleMusical = () => {
   const [musical, setMusical] = useState([])
@@ -15,9 +17,15 @@ const SingleMusical = () => {
   const location = useLocation()
   const { musicalid } = useParams()
   const navigate = useNavigate()
+  const isAuthenticated = authenticatedUser()
 
   const handleClick = () => {
     setActive(!isActive)
+  }
+
+  const navigateRegister = () => {
+    localStorage.setItem('musical-page', `/musicals/${musicalid}/`)
+    navigate('/register')
   }
 
   useEffect(() => {
@@ -62,13 +70,17 @@ const SingleMusical = () => {
               <img className='logo-image' src={musical.picture_1} />
             </a>
           </div>
+          <BackButton />
           <div className='video-comments-container'>
             <ReactPlayer className='musical-video' url={musical.video} width='100%' />
             <div className='comments-tickets-container'>
               <p className='musical-description'>{musical.description}</p>
               <div className='tickets-button'>
               </div>
-              <button className='button-common' onClick={handleClick}>Add your comments here...</button>
+              <div className='log-out-container'>
+                <button className='button-common' onClick={isAuthenticated ? handleClick : navigateRegister}>Add your comments here...</button>
+                {isAuthenticated && <button className='button-common' onClick={removeToken}>Log out</button>}
+              </div>
               <div className='comments'>
                 <div className={isActive ? 'add-comment' : 'add-comment hidden'}>
                   <EditComment />
@@ -79,9 +91,10 @@ const SingleMusical = () => {
                     <button className='button-common add-comment' onClick={handleClick}>Add your comments here...</button>
                   </>
                   :
-                  <button className='button-common join-conversation' onClick={handleClick}>Be the first to comment.</button>
+                  <div className='log-out-container'>
+                    <button className='button-common join-conversation' onClick={handleClick}>Be the first to comment.</button>
+                  </div>
                 }
-                {/* Need to add the ability to add comments if you are logged in - should take you to the log in page */}
               </div>
             </div>
           </div>

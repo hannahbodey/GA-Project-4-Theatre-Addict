@@ -8,10 +8,11 @@ from .serializers.common import TipsSerializer
 from .serializers.populated import PopulatedTipsSerializer
 from lib.exceptions import exceptions
 from rest_framework.exceptions import PermissionDenied
-from rest_framework.permissions import IsAuthenticated, IsAdminUser
+from rest_framework.permissions import IsAuthenticated, IsAdminUser, IsAuthenticatedOrReadOnly
 
 # Create your views here.
 class TipsView(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly, )
     @exceptions
     def get(self, request, pk):
         musical = Musical.objects.get(pk=pk)

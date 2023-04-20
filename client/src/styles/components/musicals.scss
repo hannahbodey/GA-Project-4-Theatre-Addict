@@ -35,17 +35,29 @@
   }
 }
 
-.genres-container {
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.genres-container, .prices-container {
   height: 5rem;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 0.75rem 0.75rem rgba(0, 0, 0, 0.8);
   display: flex;
-  justify-content: flex-end;
   .icon {
     height: 4rem;
   }
+}
+
+.genres-container {
+  justify-content: flex-end;
+}
+
+.prices-container {
+  justify-content: flex-start;
 }
 
 @media (max-width: 580px) {

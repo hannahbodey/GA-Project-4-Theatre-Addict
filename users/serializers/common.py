@@ -4,17 +4,17 @@ User = get_user_model()
 
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
-    password_confirmation = serializers.CharField(write_only=True)
+    passwordconfirmation = serializers.CharField(write_only=True)
 
     def validate(self, data):
         password = data.pop('password')
-        password_confirmation = data.pop('password_confirmation')
-        if password != password_confirmation:
-            raise serializers.ValidationError({ 'password_confirmation' : 'Does not match password.' })
+        passwordconfirmation = data.pop('passwordconfirmation')
+        if password != passwordconfirmation:
+            raise serializers.ValidationError({ 'passwordconfirmation' : 'Does not match password.' })
         password_validation.validate_password(password)
         data['password'] = hashers.make_password(password)
         return data
 
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'profile_image', 'password', 'password_confirmation')
+        fields = ('id', 'username', 'email', 'profileimage', 'password', 'passwordconfirmation')
