@@ -8,7 +8,7 @@ const BackButton = () => {
   }
 
   return (
-    <button className='button-common' onClick={handleClick}>⬅Back</button>
+    <button className='button-common back-arrow' onClick={handleClick}>⬅Back</button>
   )
 }
 
