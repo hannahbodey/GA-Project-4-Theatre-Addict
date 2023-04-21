@@ -123,13 +123,13 @@ const SingleMusical = () => {
                       const { category } = item
                       return (
                         <>
-                          {category === 'Comedy' && <p>{category} <span><SentimentSatisfiedAltIcon sx={{ color: 'white', fontSize: 35 }} className='icon' /></span></p>}
-                          {category === 'Tragedy' && <p>{category} <span><SentimentVeryDissatisfiedIcon sx={{ color: 'white', fontSize: 35 }} className='icon' /></span></p>}
-                          {category === 'Romance' && <p>{category} <span><FavoriteIcon sx={{ color: 'white', fontSize: 35 }} className='icon' /></span></p>}
-                          {category === 'Historical' && <p>{category} <span><HistoryEduIcon sx={{ color: 'white', fontSize: 35 }} className='icon' /></span></p>}
-                          {category === 'Dramatic' && <p>{category} <span><MovieIcon sx={{ color: 'white', fontSize: 35 }} className='icon' /></span></p>}
-                          {category === 'Revival' && <p>{category} <span><ElderlyIcon sx={{ color: 'white', fontSize: 35 }} className='icon' /></span></p>}
-                          {category === 'New' && <p>{category} <span><ChildFriendlyIcon sx={{ color: 'white', fontSize: 35 }} className='icon' /></span></p>}
+                          {category === 'Comedy' && <p>{category} <span><SentimentSatisfiedAltIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
+                          {category === 'Tragedy' && <p>{category} <span><SentimentVeryDissatisfiedIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
+                          {category === 'Romance' && <p>{category} <span><FavoriteIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
+                          {category === 'Historical' && <p>{category} <span><HistoryEduIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
+                          {category === 'Dramatic' && <p>{category} <span><MovieIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
+                          {category === 'Revival' && <p>{category} <span><ElderlyIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
+                          {category === 'New' && <p>{category} <span><ChildFriendlyIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
                         </>
                       )
                     })

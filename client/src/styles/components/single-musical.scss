@@ -166,6 +166,11 @@
   }
   @media (min-width: 769px) {
     margin-left: 0.5rem;
+    .musicals-pricing {
+      span {
+        display: none;
+      }
+    }
   }
   @media (max-width: 768px) {
     display: flex;
