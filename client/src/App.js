@@ -8,6 +8,7 @@ import Comment from './components/musicals/Comments'
 import EditComment from './components/musicals/EditComment'
 import Home from './components/Home'
 import Footer from './components/common/Footer'
+import Messages from './components/auth/Messages'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path='/register' element={<Register />}/>
           <Route path='/login' element={<LogIn />}/>
           <Route path='/profile' element={<Profile />}/>
+          <Route path='/messages' element={<Messages />}/>
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -22,5 +22,6 @@ urlpatterns = [
     path('api/musicals/', include('musicals.urls')),
     path('api/musicals/<int:pk>/comments/', include('theatre_tips.urls')),
     path('api/genres/', include('genres.urls')),
-    path('api/auth/', include('users.urls'))
+    path('api/auth/', include('users.urls')),
+    path('api/messages/', include('messaging.urls'))
 ]

@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'genres',
     'price_range',
     'theatre_tips',
-    'messages'
+    'messaging'
 ]
 
 MIDDLEWARE = [

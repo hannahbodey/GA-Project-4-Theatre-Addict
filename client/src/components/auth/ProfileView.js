@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import BackButton from '../common/BackArrow'
 import { userTokenFunction } from '../../helpers/auth'
+import { useNavigate } from 'react-router-dom'
 
 const Profile = () => {
   const [profile, setProfile] = useState([])
@@ -15,6 +16,7 @@ const Profile = () => {
   )
   const [error, setError] = useState('')
   const userToken = userTokenFunction()
+  const navigate = useNavigate()
 
   const handleChange = (e) => {
     setUpdatedProfile({ ...updatedProfile, [e.target.name]: e.target.value })
@@ -44,6 +46,10 @@ const Profile = () => {
       console.log(error)
       setError(error.response.data.message)
     }
+  }
+
+  const handleClick = () => {
+    navigate('/messages')
   }
 
   useEffect(() => {
@@ -82,6 +88,7 @@ const Profile = () => {
               <input type='password' name='passwordconfirmation' placeholder='Confirm new password' onChange={handleChange} value={updatedProfile.passwordconfirmation} /> */}
               <button className='button-common register-button changes-button'>Submit your changes</button>
               {error && <p>Error: {error}</p>}
+              <button className='button-common register-button changes-button' onClick={handleClick}>View your messages</button>
             </form>
           </div>
         </>
@@ -89,7 +96,6 @@ const Profile = () => {
         <p>no user here</p>
       }
     </div>
-
   )
 }
 
