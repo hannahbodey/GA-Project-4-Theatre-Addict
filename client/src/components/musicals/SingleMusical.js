@@ -94,7 +94,7 @@ const SingleMusical = () => {
               <div className='tickets-button'>
               </div>
               <div className='log-out-container'>
-                <button className='button-common' onClick={isAuthenticated ? handleClick : navigateRegister}>Add your comments here...</button>
+                <button className='button-common' onClick={isAuthenticated ? handleClick : navigateRegister}>Got advice for other theatre-goers?</button>
                 {isAuthenticated && <button className='button-common' onClick={goProfile}>Edit your profile</button>}
                 {isAuthenticated && <button className='button-common' onClick={removeToken}>Log out</button>}
               </div>

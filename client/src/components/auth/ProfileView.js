@@ -65,7 +65,7 @@ const Profile = () => {
     <div className='main-container'>
       {profile.length > 0 ?
         <>
-          <h3 className='profile-title'>Welcome, {updatedProfile.username ? updatedProfile.username : profile[0].username}</h3>
+          <h3 className='profile-title'>Welcome back, {updatedProfile.username ? updatedProfile.username : profile[0].username}</h3>
           <BackButton />
           <div className='profile-update-form'>
             <form onSubmit={handleSubmit}>

@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'musicals',
     'genres',
     'price_range',
-    'theatre_tips'
+    'theatre_tips',
+    'messages'
 ]
 
 MIDDLEWARE = [

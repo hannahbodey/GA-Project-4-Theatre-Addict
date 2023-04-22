@@ -1,0 +1,848 @@
+[
+{
+  "model": "theatre_tips.tips",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "production": 13,
+    "tip": "If you're under 25, you can get some really good tickets cheaply on the morning."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 2,
+  "fields": {
+    "owner": 1,
+    "production": 13,
+    "tip": "I strongly recommend going in the evening as lots of kids go to the matinée - it can be noisy."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 3,
+  "fields": {
+    "owner": 1,
+    "production": 13,
+    "tip": "This musical is so inspiring - you have to go and see it!"
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 21,
+  "fields": {
+    "owner": 4,
+    "production": 3,
+    "tip": "Check who is playing the Teen Angel before getting tickets - they sometimes have some famous names!"
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 22,
+  "fields": {
+    "owner": 9,
+    "production": 3,
+    "tip": "Some bits that are perhaps not child-friendly..."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 23,
+  "fields": {
+    "owner": 6,
+    "production": 4,
+    "tip": "Sit near the front to get in on the action."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 24,
+  "fields": {
+    "owner": 5,
+    "production": 4,
+    "tip": "You better wait for me to see this one!"
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 25,
+  "fields": {
+    "owner": 7,
+    "production": 17,
+    "tip": "You can get very cheap tickets on the day if you are young, scrappy and hungry and get to the theatre early."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 26,
+  "fields": {
+    "owner": 8,
+    "production": 17,
+    "tip": "Make sure you keep looking about the stage. There's always so much going on with the staging."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 27,
+  "fields": {
+    "owner": 4,
+    "production": 1,
+    "tip": "The stalls are the best spot."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 28,
+  "fields": {
+    "owner": 8,
+    "production": 1,
+    "tip": "Great study of Italian history - excellent for students."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 29,
+  "fields": {
+    "owner": 6,
+    "production": 1,
+    "tip": "Get in soon - this doesn't have a permanent West End seat."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 30,
+  "fields": {
+    "owner": 1,
+    "production": 2,
+    "tip": "Take a coat. It can get chilly."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 31,
+  "fields": {
+    "owner": 5,
+    "production": 2,
+    "tip": "Ideal for kids! Spectacular."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 32,
+  "fields": {
+    "owner": 7,
+    "production": 9,
+    "tip": "Not good if you have nut allergies."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 33,
+  "fields": {
+    "owner": 8,
+    "production": 9,
+    "tip": "Be warned - you may get hungry."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 34,
+  "fields": {
+    "owner": 4,
+    "production": 10,
+    "tip": "Great for kids! Very fun."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 35,
+  "fields": {
+    "owner": 9,
+    "production": 10,
+    "tip": "If you sit very close to the front, you may be splashed with bubbles."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 36,
+  "fields": {
+    "owner": 8,
+    "production": 39,
+    "tip": "Not as crazy for this musical as I am for Eurydice."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 37,
+  "fields": {
+    "owner": 6,
+    "production": 39,
+    "tip": "Get seats in one of the circles - that way you can see all the dancing."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 38,
+  "fields": {
+    "owner": 9,
+    "production": 40,
+    "tip": "Not suitable for children. Adult themes."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 39,
+  "fields": {
+    "owner": 4,
+    "production": 40,
+    "tip": "So thrilled to see this making a comeback! Make sure to sit near the front because you will want to see their faces clearly."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 40,
+  "fields": {
+    "owner": 7,
+    "production": 5,
+    "tip": "Definitely not for children."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 41,
+  "fields": {
+    "owner": 4,
+    "production": 5,
+    "tip": "Take a first aid kit. Your sides may be splitting at the end."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 42,
+  "fields": {
+    "owner": 6,
+    "production": 21,
+    "tip": "Wishing I was somehow back in this theatre."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 43,
+  "fields": {
+    "owner": 7,
+    "production": 21,
+    "tip": "Don't sit too close to the front if you have any hearing issues - the organ can get a bit intense."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 44,
+  "fields": {
+    "owner": 9,
+    "production": 21,
+    "tip": "Good for children aged 12+."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 45,
+  "fields": {
+    "owner": 5,
+    "production": 28,
+    "tip": "A little dark for children."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 46,
+  "fields": {
+    "owner": 8,
+    "production": 28,
+    "tip": "I think we beat these two, don't you, Eurydice?"
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 47,
+  "fields": {
+    "owner": 7,
+    "production": 28,
+    "tip": "Watch out for thefts at this theatre."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 48,
+  "fields": {
+    "owner": 6,
+    "production": 29,
+    "tip": "You are unlikely to see Lin-Manuel Miranda, if that's what you want out of this musical."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 49,
+  "fields": {
+    "owner": 7,
+    "production": 29,
+    "tip": "Frankly, you can't find a better show in London. Not that I'm biased."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 50,
+  "fields": {
+    "owner": 9,
+    "production": 29,
+    "tip": "Educational and fun - excellent for teens."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 51,
+  "fields": {
+    "owner": 8,
+    "production": 31,
+    "tip": "A major throwback."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 52,
+  "fields": {
+    "owner": 1,
+    "production": 31,
+    "tip": "Adult humour in places."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 53,
+  "fields": {
+    "owner": 5,
+    "production": 14,
+    "tip": "Stunning dance - make sure you wear comfy shoes for the audience participation at the end. And bring some water!"
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 54,
+  "fields": {
+    "owner": 4,
+    "production": 14,
+    "tip": "Some slightly adult scenes, but a classic."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 55,
+  "fields": {
+    "owner": 7,
+    "production": 15,
+    "tip": "Try and get seats in the circle - there's a zip wire and it's very cool if it goes right past you!"
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 56,
+  "fields": {
+    "owner": 6,
+    "production": 15,
+    "tip": "Sit near the front. The actors come into the audience a lot so you will be right up close to the amazing dances!"
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 57,
+  "fields": {
+    "owner": 5,
+    "production": 15,
+    "tip": "Keep your eye on what's going on around the stage - there's some excellent use of space going on here."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 58,
+  "fields": {
+    "owner": 4,
+    "production": 32,
+    "tip": "Make sure to take your watch. Timings can get a little confusing otherwise."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 59,
+  "fields": {
+    "owner": 9,
+    "production": 32,
+    "tip": "Sit in the circle. You get the best view of the groundhog from there."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 60,
+  "fields": {
+    "owner": 7,
+    "production": 12,
+    "tip": "Perfect musical for children. Get up close to the stage so that you can see the actor's expressions as well as the puppetry."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 61,
+  "fields": {
+    "owner": 6,
+    "production": 12,
+    "tip": "If not going with kids, go for an evening performance. The matinée is always a bit noisy."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 62,
+  "fields": {
+    "owner": 9,
+    "production": 13,
+    "tip": "You can get very cheap tickets on the day if you are young like Marius and get there early. However, the view is slightly tainted by a pole. Still worth it though!"
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 63,
+  "fields": {
+    "owner": 5,
+    "production": 13,
+    "tip": "Actually very deep - if going with very young children, make sure you talk it through afterwards."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 64,
+  "fields": {
+    "owner": 4,
+    "production": 13,
+    "tip": "Beware of lots of children at matinées, and school groups in the week."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 65,
+  "fields": {
+    "owner": 7,
+    "production": 16,
+    "tip": "Very excellent for those who already know lots of the music. A lovely present for someone a bit older."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 66,
+  "fields": {
+    "owner": 8,
+    "production": 16,
+    "tip": "Sit in the royal circle. The sound is best from there!"
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 67,
+  "fields": {
+    "owner": 1,
+    "production": 6,
+    "tip": "Everybody can-can see this musical, but I wouldn't advise taking young children."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 68,
+  "fields": {
+    "owner": 8,
+    "production": 6,
+    "tip": "Sit in the grand circle if you can afford it. The view over the whole stage is amazing."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 69,
+  "fields": {
+    "owner": 5,
+    "production": 6,
+    "tip": "If you go in the stalls, you do feel more a part of the action, but you might have to look up a lot in order not to miss some things going on across the whole stage."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 70,
+  "fields": {
+    "owner": 9,
+    "production": 7,
+    "tip": "Not suitable for young children."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 71,
+  "fields": {
+    "owner": 6,
+    "production": 7,
+    "tip": "Watch out for hen parties on Saturday nights - you're better going on a different evening."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 72,
+  "fields": {
+    "owner": 5,
+    "production": 8,
+    "tip": "No tips available. Can't tell you what it will be like in advance."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 73,
+  "fields": {
+    "owner": 7,
+    "production": 8,
+    "tip": "Quite frankly, very hard to say what will happen in this musical."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 74,
+  "fields": {
+    "owner": 4,
+    "production": 18,
+    "tip": "Not for the faint-hearted - if you prefer things to be PC, don't go for this one."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 75,
+  "fields": {
+    "owner": 1,
+    "production": 18,
+    "tip": "Serious adult themes going on here."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 76,
+  "fields": {
+    "owner": 5,
+    "production": 18,
+    "tip": "Take a first aid kit. Your sides may be splitting at the end."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 77,
+  "fields": {
+    "owner": 9,
+    "production": 20,
+    "tip": "Really lovely for kids. Sit as close to the front as possible to get to see all the puppets and costumes."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 78,
+  "fields": {
+    "owner": 7,
+    "production": 20,
+    "tip": "Don't go for a matinée unless you are taking children."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 79,
+  "fields": {
+    "owner": 5,
+    "production": 24,
+    "tip": "Probably best to keep your phone in flight mode for this, rather than off. The changing time zones are going to be confusing enough if you can't check the time in the interval."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 80,
+  "fields": {
+    "owner": 6,
+    "production": 24,
+    "tip": "Definitely worth sitting in the stalls for this one. It's less about big scenes and more about intimate exchanges between cast members, so you want to be able to see their faces clearly."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 81,
+  "fields": {
+    "owner": 9,
+    "production": 33,
+    "tip": "No lycra, please."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 82,
+  "fields": {
+    "owner": 5,
+    "production": 33,
+    "tip": "Inspiring - great for secondary-age students studying WWII."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 83,
+  "fields": {
+    "owner": 8,
+    "production": 34,
+    "tip": "Don't sit in the boxes because the view is somewhat impaired."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 84,
+  "fields": {
+    "owner": 6,
+    "production": 34,
+    "tip": "Excellent for psychology students."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 85,
+  "fields": {
+    "owner": 1,
+    "production": 37,
+    "tip": "Stall seats are worth it for this one. Sit as centrally as possible so that you can see all of the tap-dancing sparkly glory."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 86,
+  "fields": {
+    "owner": 4,
+    "production": 37,
+    "tip": "Bring a map. I somehow ended up on 43rd Street."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 87,
+  "fields": {
+    "owner": 7,
+    "production": 35,
+    "tip": "If you manage to get seats in the box, you're in for some fun surprises."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 88,
+  "fields": {
+    "owner": 8,
+    "production": 35,
+    "tip": "I ain't too proud of how much I enjoyed this show."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 89,
+  "fields": {
+    "owner": 9,
+    "production": 36,
+    "tip": "Don't take your kids. You don't want them getting in on any silly ideas about household management."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 90,
+  "fields": {
+    "owner": 5,
+    "production": 36,
+    "tip": "Definitely worth paying for the stalls! Hilarious facial expressions from the whole cast."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 91,
+  "fields": {
+    "owner": 4,
+    "production": 11,
+    "tip": "Try to get seats in the grand circle - it's like sitting in a real auditorium for a concert!"
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 92,
+  "fields": {
+    "owner": 7,
+    "production": 11,
+    "tip": "The gradations on the tiered seating are a little small, so perhaps stick with the stalls if you are not that tall.."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 93,
+  "fields": {
+    "owner": 5,
+    "production": 22,
+    "tip": "Stalls every time. Worth every penny."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 94,
+  "fields": {
+    "owner": 9,
+    "production": 22,
+    "tip": "Speaking from personal experience, this musical is quite long / far-reaching. If you struggle to follow complex plots, consider reading up in advance so you know what's happening."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 95,
+  "fields": {
+    "owner": 8,
+    "production": 41,
+    "tip": "As a musician who struggles with getting forward in business, I found this musical very, very helpful."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 96,
+  "fields": {
+    "owner": 7,
+    "production": 41,
+    "tip": "This is almost like following Burr's advice."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 97,
+  "fields": {
+    "owner": 1,
+    "production": 19,
+    "tip": "Not suitable for those sensitive to flashing light - there are quite a lot of sparks flying / explosions!"
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 98,
+  "fields": {
+    "owner": 6,
+    "production": 19,
+    "tip": "Don't sit at the very front if you are wearing lots of hairspray. Your hair may be hit by a rogue spark."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 99,
+  "fields": {
+    "owner": 9,
+    "production": 23,
+    "tip": "Don't sit in row C unless you're in the very middle. There's some structural elements that obstruct the view slightly."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 100,
+  "fields": {
+    "owner": 8,
+    "production": 23,
+    "tip": "Make sure you sit very centrally so that you can see all of the dance."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 101,
+  "fields": {
+    "owner": 5,
+    "production": 26,
+    "tip": "Not great if you are sensitive to flashing lights."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 102,
+  "fields": {
+    "owner": 1,
+    "production": 26,
+    "tip": "You'll get a great view of the stage from row G, right in the middle."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 103,
+  "fields": {
+    "owner": 7,
+    "production": 30,
+    "tip": "I must say, I think mine is more historically accurate."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 104,
+  "fields": {
+    "owner": 4,
+    "production": 30,
+    "tip": "Listen to the soundtrack in advance so that you can fully appreciate the lyricism."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 105,
+  "fields": {
+    "owner": 9,
+    "production": 38,
+    "tip": "Not great if you struggle with asthma - there's a lot of fake smoke."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 106,
+  "fields": {
+    "owner": 6,
+    "production": 38,
+    "tip": "Take some water so that you can sing along at the end."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 107,
+  "fields": {
+    "owner": 8,
+    "production": 25,
+    "tip": "I wouldn't recommend taking younger children to this. It's amazing but a little racy."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 108,
+  "fields": {
+    "owner": 4,
+    "production": 25,
+    "tip": "Check out who is headlining before booking - they change every now and again and they have some big stars sometimes."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 109,
+  "fields": {
+    "owner": 5,
+    "production": 25,
+    "tip": "Intimate setting, so be prepared for cast members expecting you to react to them. They will walk around the tables."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 110,
+  "fields": {
+    "owner": 6,
+    "production": 27,
+    "tip": "Excellent revival of a classic - great to take kids."
+  }
+},
+{
+  "model": "theatre_tips.tips",
+  "pk": 111,
+  "fields": {
+    "owner": 7,
+    "production": 27,
+    "tip": "Book soon as this has a limited run."
+  }
+}
+]
