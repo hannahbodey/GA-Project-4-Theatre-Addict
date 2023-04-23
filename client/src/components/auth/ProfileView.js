@@ -49,6 +49,13 @@ const Profile = () => {
   }
 
   const handleClick = () => {
+    if (updatedProfile.username) {
+      const currentUser = updatedProfile.username
+      localStorage.setItem('current user', currentUser)
+    } else {
+      const currentUser = profile[0].username
+      localStorage.setItem('current user', currentUser)
+    }
     navigate('/messages')
   }
 

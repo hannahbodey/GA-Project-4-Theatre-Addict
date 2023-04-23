@@ -6,7 +6,6 @@ import ImageCarousel from '../common/ImageCarousel'
 const Register = () => {
   const location = useLocation()
   const navigate = useNavigate()
-  // const from = location.state?.from?.pathname || '/musicals'
 
   const [formFields, setFormFields] = useState({
     username: '',
@@ -27,11 +26,9 @@ const Register = () => {
     e.preventDefault()
     try {
       await axios.post('/api/auth/register/', formFields)
-      // navigate back to single musical page
       const musicalpage = localStorage.getItem('musical-page')
       navigate(musicalpage)
       localStorage.removeItem('musical-page')
-      // navigate(from, { replace: true })
     } catch (error) {
       console.log(error)
       setError(error.response.data.message)

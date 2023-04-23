@@ -1,6 +1,18 @@
 import SendIcon from '@mui/icons-material/Send'
+import { authenticatedUser } from '../../helpers/auth'
+import { useState, useEffect } from 'react'
+import Messaging from '../common/Messaging'
 
 const Comment = ({ comments }) => {
+  const [isActive, setActive] = useState(false)
+  const [recipient, setRecipient] = useState()
+  const isAuthenticated = authenticatedUser()
+
+  const handleClick = (e) => {
+    setActive(!isActive)
+    setRecipient(e.target.value)
+  }
+
   return (
     comments.map(item => {
       const { id, owner, tip } = item
@@ -9,7 +21,8 @@ const Comment = ({ comments }) => {
           <div className='comment-owner'>
             <img className='user-profile-image' src={owner.profileimage} alt='user profile image' />
             <p className='username-box'>{owner.username}</p>
-            <button className='button-common'><span><SendIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span> Send a reply</button>
+            {isAuthenticated && <button className='button-common' onClick={handleClick} value={owner.id}><span><SendIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span> Ask {owner.username} more</button>}
+            {isActive ? <Messaging value={recipient}/> : <></>}
           </div>
           <p className='user-comment'>{tip}</p>
         </div>
