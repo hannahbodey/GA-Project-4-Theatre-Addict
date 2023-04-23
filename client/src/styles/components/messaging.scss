@@ -31,15 +31,26 @@
     @media (max-width: 768px) {
       margin-left: 45%;
     }
-  }
-}
-
-.comment-owner {
-  .message-button {
-    margin-left: 35%;
-    @media (max-width: 768px) {
-      margin-left: 6.5rem;
-      margin-bottom: 0.25rem;
+    @media (max-width: 400px) {
+      margin-left: 30%;
     }
   }
 }
+
+.comment-message-owner {
+  .message-button {
+    margin-bottom: 0.25rem;
+    @media (max-width: 768px) {
+      margin-left: 0.25rem;
+    }
+    @media (max-width: 400px) {
+      margin-left: 0;
+    }
+  }
+  .message-user-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.25rem;
+  }
+}
+

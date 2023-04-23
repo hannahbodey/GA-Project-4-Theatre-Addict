@@ -28,6 +28,7 @@ const EditComment = () => {
       const { data } = await axios.post(`/api/musicals/${musicalid}/comments/`, formFields, userToken)
       setNewComment(data)
       setResponse(!response)
+      setFormFields({ ...formFields, tip: '' })
     } catch (error) {
       setError(error.response.data.message)
     }

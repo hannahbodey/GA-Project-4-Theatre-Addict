@@ -20,10 +20,14 @@ const Comment = ({ comments }) => {
         const { id, owner, tip } = item
         return (
           <div key={id}>
-            <div className='comment-owner'>
-              <img className='user-profile-image' src={owner.profileimage} alt='user profile image' />
-              <p className='username-box'>{owner.username}</p>
-              {isAuthenticated && <button className='button-common message-button' onClick={handleClick} value={owner.id}><span><SendIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span> Ask {owner.username} more</button>}
+            <div className='comment-message-owner'>
+              <div className='comment-owner'>
+                <img className='user-profile-image' src={owner.profileimage} alt='user profile image' />
+                <p className='username-box'>{owner.username}</p>
+              </div>
+              <div className='message-user-box'>
+                {isAuthenticated && <button className='button-common message-button' onClick={handleClick} value={owner.id}><span><SendIcon sx={{ color: 'white', fontSize: 10 }} className='icon' /></span> Ask {owner.username} more</button>}
+              </div>
             </div>
             <p className='user-comment'>{tip}</p>
           </div>

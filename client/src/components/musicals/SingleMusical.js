@@ -98,11 +98,12 @@ const SingleMusical = () => {
             <ReactPlayer className='musical-video' url={musical.video} width='100%' />
             <div className='comments-tickets-container'>
               <p className='musical-description'>{musical.description}</p>
+              <p className='musical-description-author'>TheatreAddicts.com</p>
               <div className='tickets-button'>
               </div>
               <div className='log-out-container'>
-                <button className='button-common' onClick={authenticatedUser() ? handleClick : navigateRegister}>Got advice for other theatre-goers?</button>
-                {(authenticatedUser() && activeUser) && <button className='button-common' onClick={goProfile}>Edit your profile</button>}
+                <button className='button-common' onClick={authenticatedUser() ? handleClick : navigateRegister}>Share your tips!</button>
+                {(authenticatedUser() && activeUser) && <button className='button-common' onClick={goProfile}>Edit profile</button>}
                 {(authenticatedUser() && activeUser) && <button className='button-common' onClick={handleLogout}>Log out</button>}
               </div>
               <div className='comments'>

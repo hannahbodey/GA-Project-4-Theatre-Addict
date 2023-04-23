@@ -1,4 +1,10 @@
-@media (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 400px) {
+  .comments-tickets-container {
+    margin-top: 60%;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 480px) {
   .comments-tickets-container {
     margin-top: 40%;
   }
@@ -125,14 +131,12 @@
     @extend %title-container;
     margin-left: 0.5rem;
     height: 9rem;
-
     h1.musical-name {
       margin-left: 1rem;
     }
   }
 }
 
-.musical-description,
 .user-comment {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 0%, rgb(245, 188, 188, 0.6) 35%, rgb(239, 222, 186, 0.6) 100%);
   padding: 1rem;
@@ -142,6 +146,16 @@
 
 .musical-description {
   font-size: larger;
+  padding-top: 1rem;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.musical-description-author {
+  font-size: medium;
+  color: #fff;
+  padding-top: none;
+  font-style: italic;
 }
 
 .musical-video {
