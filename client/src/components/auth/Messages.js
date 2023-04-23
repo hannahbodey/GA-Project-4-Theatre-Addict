@@ -30,7 +30,6 @@ const Messages = () => {
     const getMessages = async () => {
       try {
         const { data } = await axios.get('/api/messages/1/', userToken)
-        console.log(data)
         setMessages(data)
       } catch (error) {
         console.log(error)
@@ -73,11 +72,11 @@ const Messages = () => {
             {messages.map(item => {
               const { id, message, owner, recipient } = item
               return (
-                <div key={id}>
+                <div key={id} className='message-box'>
                   <div className='comment-owner'>
                     <p className='username-box'>Message from: {owner.username}</p>
                     <img className='user-profile-image' src={owner.profileimage} alt='user profile image' />
-                    {currentUser === owner.username ? <></> : <button className='button-common' onClick={handleClick} value={owner.id}><span><SendIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span> Reply to {owner.username}</button>}
+                    {currentUser === owner.username ? <></> : <button className='button-common send-message-button' onClick={handleClick} value={owner.id}><span><SendIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span> Reply to {owner.username}</button>}
                   </div>
                   <div className='comment-owner'>
                     <p className='username-box'>Message to: {recipient.username}</p>

@@ -54,7 +54,6 @@ const SingleMusical = () => {
     const getMusical = async () => {
       try {
         const { data } = await axios.get(`/api/musicals/${musicalid}/`)
-        console.log(data)
         setMusical(data)
         if (localStorage.getItem('current user')) {
           setActiveUser(true)
@@ -70,7 +69,6 @@ const SingleMusical = () => {
     const getComments = async () => {
       try {
         const { data } = await axios.get(`/api/musicals/${musicalid}/comments/`)
-        console.log(data)
         setComments(data)
       } catch (error) {
         setError(error.response.data.message)

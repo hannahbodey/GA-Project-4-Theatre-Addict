@@ -24,7 +24,6 @@ const Musicals = () => {
     const getMusicals = async () => {
       try {
         const { data } = await axios.get('/api/musicals/')
-        console.log(data)
         setMusicals(data)
       } catch (error) {
         setError(error.response.data.message)

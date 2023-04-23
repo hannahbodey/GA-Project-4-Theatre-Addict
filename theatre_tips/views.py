@@ -18,9 +18,6 @@ class TipsView(APIView):
         musical = Musical.objects.get(pk=pk)
         tips = Tips.objects.filter(production=musical.id)
         serialized_tips = PopulatedTipsSerializer(tips, many=True)
-        # This at least works, but it brings back all the comments.
-        # tips = Tips.objects.all()
-        # serialized_tips = TipsSerializer(tips, many=True)
         return Response(serialized_tips.data)
     
     def post(self, request, pk):

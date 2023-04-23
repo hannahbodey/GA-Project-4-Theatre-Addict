@@ -10,7 +10,6 @@ const ImageCarousel = () => {
     const getPictures = async () => {
       try {
         const { data } = await axios.get('/api/musicals/')
-        console.log(data)
         setPictures(data)
       } catch (error) {
         setError(error.response.data.message)

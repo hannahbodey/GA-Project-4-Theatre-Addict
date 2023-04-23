@@ -23,7 +23,7 @@ const Comment = ({ comments }) => {
             <div className='comment-owner'>
               <img className='user-profile-image' src={owner.profileimage} alt='user profile image' />
               <p className='username-box'>{owner.username}</p>
-              {isAuthenticated && <button className='button-common' onClick={handleClick} value={owner.id}><span><SendIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span> Ask {owner.username} more</button>}
+              {isAuthenticated && <button className='button-common message-button' onClick={handleClick} value={owner.id}><span><SendIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span> Ask {owner.username} more</button>}
             </div>
             <p className='user-comment'>{tip}</p>
           </div>

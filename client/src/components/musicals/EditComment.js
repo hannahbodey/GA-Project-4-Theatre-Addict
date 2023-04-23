@@ -24,11 +24,8 @@ const EditComment = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setError('')
-    console.log(userToken)
-    console.log('form fields', formFields)
     try {
       const { data } = await axios.post(`/api/musicals/${musicalid}/comments/`, formFields, userToken)
-      console.log(data)
       setNewComment(data)
       setResponse(!response)
     } catch (error) {

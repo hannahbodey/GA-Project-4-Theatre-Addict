@@ -15,6 +15,7 @@ const Profile = () => {
   }
   )
   const [error, setError] = useState('')
+  const [messages, setMessages] = useState([])
   const userToken = userTokenFunction()
   const navigate = useNavigate()
 
@@ -38,10 +39,8 @@ const Profile = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log('submitting', updatedProfile)
     try {
       const { data } = await axios.put(`/api/auth/profile/${profile[0].id}/`, updatedProfile, userToken)
-      console.log(data)
     } catch (error) {
       console.log(error)
       setError(error.response.data.message)
@@ -63,7 +62,6 @@ const Profile = () => {
     const getProfile = async () => {
       try {
         const { data } = await axios.get('/api/auth/profile/', userToken)
-        console.log(data)
         setProfile(data)
         setUpdatedProfile(data)
       } catch (error) {
@@ -72,6 +70,19 @@ const Profile = () => {
       }
     }
     getProfile()
+  }, [])
+
+  useEffect(() => {
+    const getMessages = async () => {
+      try {
+        const { data } = await axios.get('/api/messages/1/', userToken)
+        setMessages(data)
+      } catch (error) {
+        console.log(error)
+        setError(error.response.data.message)
+      }
+    }
+    getMessages()
   }, [])
 
   return (
@@ -95,7 +106,7 @@ const Profile = () => {
               <input type='password' name='passwordconfirmation' placeholder='Confirm new password' onChange={handleChange} value={updatedProfile.passwordconfirmation} /> */}
               <button className='button-common register-button changes-button'>Submit your changes</button>
               {error && <p>Error: {error}</p>}
-              <button className='button-common register-button changes-button' onClick={handleClick}>View your messages</button>
+              <button className='button-common register-button changes-button' onClick={handleClick}>View your messages: {messages.length} messages</button>
             </form>
           </div>
         </>

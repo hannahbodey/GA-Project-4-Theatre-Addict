@@ -1,0 +1,119 @@
+[
+{
+  "model": "messaging.message",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "recipient": 4,
+    "message": "Hey! I saw your message about Wicked, and I wondered if you could tell me some more about the show?"
+  }
+},
+{
+  "model": "messaging.message",
+  "pk": 2,
+  "fields": {
+    "owner": 1,
+    "recipient": 5,
+    "message": "Hey! Where can I find the cast list for this musical?"
+  }
+},
+{
+  "model": "messaging.message",
+  "pk": 3,
+  "fields": {
+    "owner": 1,
+    "recipient": 4,
+    "message": "Hey! Where can I see this information?"
+  }
+},
+{
+  "model": "messaging.message",
+  "pk": 4,
+  "fields": {
+    "owner": 4,
+    "recipient": 1,
+    "message": "Look on the theatre's website, it usually says there :)"
+  }
+},
+{
+  "model": "messaging.message",
+  "pk": 5,
+  "fields": {
+    "owner": 1,
+    "recipient": 4,
+    "message": "Thank you so much!"
+  }
+},
+{
+  "model": "messaging.message",
+  "pk": 6,
+  "fields": {
+    "owner": 1,
+    "recipient": 4,
+    "message": "Thank you so much!"
+  }
+},
+{
+  "model": "messaging.message",
+  "pk": 7,
+  "fields": {
+    "owner": 1,
+    "recipient": 4,
+    "message": "This is so helpful!"
+  }
+},
+{
+  "model": "messaging.message",
+  "pk": 8,
+  "fields": {
+    "owner": 1,
+    "recipient": 4,
+    "message": "What shows have you seen recently?"
+  }
+},
+{
+  "model": "messaging.message",
+  "pk": 9,
+  "fields": {
+    "owner": 1,
+    "recipient": 8,
+    "message": "Do they speak any Italian in the show?"
+  }
+},
+{
+  "model": "messaging.message",
+  "pk": 10,
+  "fields": {
+    "owner": 8,
+    "recipient": 1,
+    "message": "I'm not actually sure... I'm sure that any Italian will have fairly obvious meanings anyway! They want everyone to be able to enjoy the show :)"
+  }
+},
+{
+  "model": "messaging.message",
+  "pk": 11,
+  "fields": {
+    "owner": 1,
+    "recipient": 8,
+    "message": "What, like in Encanto? Where it's a bit obvious what they are meaning with the Spanish that they use?"
+  }
+},
+{
+  "model": "messaging.message",
+  "pk": 12,
+  "fields": {
+    "owner": 5,
+    "recipient": 1,
+    "message": "All you have to do is Google - usually their websites have a list :)"
+  }
+},
+{
+  "model": "messaging.message",
+  "pk": 13,
+  "fields": {
+    "owner": 5,
+    "recipient": 1,
+    "message": "Do you think it would matter if I didn't take a coat to Frozen? Although, to be fair, at the moment I do live in Hadestown which is very hot! I might find it hard to adjust."
+  }
+}
+]

@@ -23,7 +23,6 @@ const Messaging = ({ value }) => {
     const getUser = async () => {
       try {
         const { data } = await axios.get('/api/auth/profile/', userToken)
-        console.log(data)
         setProfile(data)
       } catch (error) {
         console.log(error)
@@ -38,7 +37,6 @@ const Messaging = ({ value }) => {
     e.preventDefault()
     try {
       const { data } = await axios.post(`/api/messages/${value}/`, formFields, userToken)
-      console.log(data)
       setResponse(!response)
     } catch (error) {
       console.log(error)
@@ -47,7 +45,7 @@ const Messaging = ({ value }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='send-message' onSubmit={handleSubmit}>
       <label htmlFor='message'></label>
       <input type='text' name='message' placeholder='Enter message' onChange={handleChange} value={formFields.message} />
       <button className={response ? 'button-comment sent' : 'button-comment'}>{response ? <span>Message sent!</span> : <span>Send message</span>}</button>
