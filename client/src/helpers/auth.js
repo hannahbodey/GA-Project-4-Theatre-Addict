@@ -29,7 +29,7 @@ export const userTokenFunction = () => {
   return userToken
 }
 
-// Neeed to add in possibility to log out
 export const removeToken = () => {
   localStorage.removeItem(tokenName)
+  localStorage.removeItem('current user')
 }

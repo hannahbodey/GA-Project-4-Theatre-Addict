@@ -39,19 +39,12 @@ const Messaging = ({ value }) => {
     try {
       const { data } = await axios.post(`/api/messages/${value}/`, formFields, userToken)
       console.log(data)
-      setResponse(true)
+      setResponse(!response)
     } catch (error) {
       console.log(error)
       setError(error.response.data.message)
     }
   }
-
-  // const alertResponse = () => {
-  //   return (
-  //     <Alert severity="success">This is a success alert — check it out!</Alert>
-  //   )
-
-  // }
 
   return (
     <form onSubmit={handleSubmit}>

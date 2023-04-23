@@ -25,6 +25,7 @@ const SingleMusical = () => {
   const [comments, setComments] = useState([])
   const [error, setError] = useState('')
   const [isActive, setActive] = useState(false)
+  const [activeUser, setActiveUser] = useState(false)
 
   const location = useLocation()
   const { musicalid } = useParams()
@@ -44,12 +45,20 @@ const SingleMusical = () => {
     navigate('/profile')
   }
 
+  const handleLogout = () => {
+    removeToken()
+    setActiveUser(false)
+  }
+
   useEffect(() => {
     const getMusical = async () => {
       try {
         const { data } = await axios.get(`/api/musicals/${musicalid}/`)
         console.log(data)
         setMusical(data)
+        if (localStorage.getItem('current user')) {
+          setActiveUser(true)
+        }
       } catch (error) {
         setError(error.response.data.message)
       }
@@ -94,9 +103,9 @@ const SingleMusical = () => {
               <div className='tickets-button'>
               </div>
               <div className='log-out-container'>
-                <button className='button-common' onClick={isAuthenticated ? handleClick : navigateRegister}>Got advice for other theatre-goers?</button>
-                {isAuthenticated && <button className='button-common' onClick={goProfile}>Edit your profile</button>}
-                {isAuthenticated && <button className='button-common' onClick={removeToken}>Log out</button>}
+                <button className='button-common' onClick={authenticatedUser() ? handleClick : navigateRegister}>Got advice for other theatre-goers?</button>
+                {(authenticatedUser() && activeUser) && <button className='button-common' onClick={goProfile}>Edit your profile</button>}
+                {(authenticatedUser() && activeUser) && <button className='button-common' onClick={handleLogout}>Log out</button>}
               </div>
               <div className='comments'>
                 <div className={isActive ? 'add-comment' : 'add-comment hidden'}>

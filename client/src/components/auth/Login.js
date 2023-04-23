@@ -24,6 +24,9 @@ const LogIn = () => {
     try {
       const { data } = await axios.post('/api/auth/login/', formFields)
       localStorage.setItem('THEATRE-PROJECT-TOKEN', data.token)
+      console.log(data)
+      const currentUser = data.username
+      localStorage.setItem('current user', currentUser)
       const musicalpage = localStorage.getItem('musical-page')
       navigate(musicalpage)
       localStorage.removeItem('musical-page')

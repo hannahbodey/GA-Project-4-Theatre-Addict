@@ -10,11 +10,12 @@ const EditComment = () => {
   })
   const [newComment, setNewComment] = useState({})
   const [error, setError] = useState('')
+  const [response, setResponse] = useState(false)
   const { musicalid } = useParams()
   const navigate = useNavigate()
   const location = useLocation()
   const userToken = userTokenFunction()
-  // const from = location.state?.from?.pathname || '/musicals'
+  const currentUser = localStorage.getItem('current user')
 
   const handleChange = (e) => {
     setFormFields({ ...formFields, [e.target.name]: e.target.value })
@@ -24,35 +25,16 @@ const EditComment = () => {
     e.preventDefault()
     setError('')
     console.log(userToken)
+    console.log('form fields', formFields)
     try {
       const { data } = await axios.post(`/api/musicals/${musicalid}/comments/`, formFields, userToken)
-      // navigate(from, { replace: true })
       console.log(data)
       setNewComment(data)
-      // displayComments(newComment)
+      setResponse(!response)
     } catch (error) {
       setError(error.response.data.message)
     }
   }
-
-  const displayComments = (newComment) => {
-    if (!newComment) return
-    console.log(newComment)
-    return (
-      <p>New comment here</p>
-      // <>
-      //   <div className='comment-owner'>
-      //     <img className='user-profile-image' src={newComment.owner.profile_image} alt='user profile image' />
-      //     <p className='username-box'>{newComment.owner.username}</p>
-      //   </div>
-      //   <p className='user-comment'>{newComment.tip}</p>
-      // </>
-    )
-  }
-
-  useEffect(() => {
-    displayComments(newComment)
-  }, [newComment])
 
   return (
     <>
@@ -60,13 +42,18 @@ const EditComment = () => {
         <form className='comments-form' onSubmit={handleSubmit}>
           <label htmlFor='tip' />
           <input className='comment-entry' type='text' name='tip' placeholder='Join the conversation...' onChange={handleChange} value={formFields.tip} />
-          <button className='button-common'>Submit!</button>
+          <button className={response ? 'button-common sent' : 'button-common'}>{response ? <span>Submitted</span> : <span>Submit!</span>}</button>
         </form>
       </div>
-      {/* {displayComments()} */}
+      {response &&
+        <>
+          <div className='comment-owner'>
+            {/* <img className='user-profile-image' src={newComment.owner.profileimage} alt='user profile image' /> */}
+            <p className='username-box'>{currentUser} - your new comment:</p>
+          </div>
+          <p className='user-comment'>{newComment.tip}</p>
+        </>}
     </>
-
-
   )
 }
 
