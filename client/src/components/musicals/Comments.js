@@ -1,6 +1,6 @@
 import SendIcon from '@mui/icons-material/Send'
 import { authenticatedUser } from '../../helpers/auth'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Messaging from '../common/Messaging'
 
 const Comment = ({ comments }) => {

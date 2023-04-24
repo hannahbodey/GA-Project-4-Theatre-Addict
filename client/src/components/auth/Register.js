@@ -1,10 +1,9 @@
 import axios from 'axios'
-import { useState, useEffect } from 'react'
-import { useLocation, useNavigate } from 'react-router'
+import { useState } from 'react'
+import { useNavigate } from 'react-router'
 import ImageCarousel from '../common/ImageCarousel'
 
 const Register = () => {
-  const location = useLocation()
   const navigate = useNavigate()
 
   const [formFields, setFormFields] = useState({
@@ -22,6 +21,7 @@ const Register = () => {
   }
 
   const handleSubmit = async (e) => {
+    setError('')
     console.log(formFields)
     e.preventDefault()
     try {
@@ -33,8 +33,8 @@ const Register = () => {
       navigate(musicalpage)
       localStorage.removeItem('musical-page')
     } catch (error) {
-      console.log(error)
-      setError(error.response.data.message)
+      console.log(error.response.data.detail)
+      setError(error.response.data.detail)
     }
   }
 
@@ -47,7 +47,7 @@ const Register = () => {
       const { data } = await axios.post(`https://api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDNAME}/image/upload`, pictureToUpload)
       setFormFields({ ...formFields, profileimage: data.secure_url })
     } catch (error) {
-      setError(error.response.data.message)
+      setError(error.response.data)
     }
   }
 
@@ -65,17 +65,21 @@ const Register = () => {
           </a>
           <label htmlFor='username'></label>
           <input type='text' name='username' placeholder='Username' onChange={handleChange} value={formFields.username} />
+          {error.username && <p className='error'>Error: {error.username}</p>}
           <label htmlFor='email'></label>
           <input type='email' name='email' placeholder='Email' onChange={handleChange} value={formFields.email} />
+          {error.email && <p className='error'>Error: {error.email}</p>}
           <label htmlFor='profileimage'></label>
           {formFields.profileimage ? <img src={formFields.profileimage} /> : <input type='file' onChange={handleUpload} value={formFields.profileimage} />}
+          {error.profileimage && <p className='error'>Error: {error.profileimage}</p>}
           <label htmlFor='password'></label>
           <input type='password' name='password' placeholder='Password' onChange={handleChange} value={formFields.password} />
+          {error.password && <p className='error'>Error: {error.password}</p>}
           <label htmlFor='passwordconfirmation'></label>
           <input type='password' name='passwordconfirmation' placeholder='Confirm password' onChange={handleChange} value={formFields.passwordconfirmation} />
+          {error.passwordconfirmation && <p className='error'>Error: {error.passwordconfirmation}</p>}
         </div>
         <button className='register-button button-common'>Register</button>
-        {error && <p>Error: {error}</p>}
         <button onClick={navigateLogin} className='register-button button-common'>Already have an account? Log in now.</button>
       </form>
       <ImageCarousel />

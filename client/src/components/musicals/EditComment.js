@@ -1,7 +1,6 @@
 import axios from 'axios'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router'
-import Comment from './Comments'
 import { userTokenFunction } from '../../helpers/auth'
 
 const EditComment = () => {
@@ -12,8 +11,6 @@ const EditComment = () => {
   const [error, setError] = useState('')
   const [response, setResponse] = useState(false)
   const { musicalid } = useParams()
-  const navigate = useNavigate()
-  const location = useLocation()
   const userToken = userTokenFunction()
   const currentUser = localStorage.getItem('current user')
 
@@ -46,7 +43,6 @@ const EditComment = () => {
       {response &&
         <>
           <div className='comment-owner'>
-            {/* <img className='user-profile-image' src={newComment.owner.profileimage} alt='user profile image' /> */}
             <p className='username-box'>{currentUser} - your new comment:</p>
           </div>
           <p className='user-comment'>{newComment.tip}</p>

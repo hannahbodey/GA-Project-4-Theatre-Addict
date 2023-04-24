@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams, useLocation, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import ReactPlayer from 'react-player/youtube'
 import Comment from './Comments'
@@ -7,18 +7,8 @@ import EditComment from './EditComment'
 import Spinner from '../common/Spinner'
 import { authenticatedUser, removeToken } from '../../helpers/auth'
 import BackButton from '../common/BackArrow'
-import TheaterComedyIcon from '@mui/icons-material/TheaterComedy'
-import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions'
-import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt'
-import SentimentVeryDissatisfiedIcon from '@mui/icons-material/SentimentVeryDissatisfied'
-import FavoriteIcon from '@mui/icons-material/Favorite'
-import HistoryEduIcon from '@mui/icons-material/HistoryEdu'
-import MovieIcon from '@mui/icons-material/Movie'
-import ElderlyIcon from '@mui/icons-material/Elderly'
-import ChildFriendlyIcon from '@mui/icons-material/ChildFriendly'
-import FiberNewIcon from '@mui/icons-material/FiberNew'
-import PaymentIcon from '@mui/icons-material/Payment'
-import CurrencyPoundIcon from '@mui/icons-material/CurrencyPound'
+import PricesSingle from '../common/PricesSingle'
+import GenresSingle from '../common/GenresSingle'
 
 const SingleMusical = () => {
   const [musical, setMusical] = useState([])
@@ -27,10 +17,8 @@ const SingleMusical = () => {
   const [isActive, setActive] = useState(false)
   const [activeUser, setActiveUser] = useState(false)
 
-  const location = useLocation()
   const { musicalid } = useParams()
   const navigate = useNavigate()
-  const isAuthenticated = authenticatedUser()
 
   const handleClick = () => {
     setActive(!isActive)
@@ -131,13 +119,7 @@ const SingleMusical = () => {
                       const { category } = item
                       return (
                         <>
-                          {category === 'Comedy' && <p>{category} <span><SentimentSatisfiedAltIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
-                          {category === 'Tragedy' && <p>{category} <span><SentimentVeryDissatisfiedIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
-                          {category === 'Romance' && <p>{category} <span><FavoriteIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
-                          {category === 'Historical' && <p>{category} <span><HistoryEduIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
-                          {category === 'Dramatic' && <p>{category} <span><MovieIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
-                          {category === 'Revival' && <p>{category} <span><ElderlyIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
-                          {category === 'New' && <p>{category} <span><ChildFriendlyIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
+                          <GenresSingle category={category} />
                         </>
                       )
                     })
@@ -156,14 +138,7 @@ const SingleMusical = () => {
                       const { cost } = item
                       return (
                         <>
-                          {cost === '£10-30' && <p>{cost} <span><CurrencyPoundIcon sx={{ color: 'white', fontSize: 15 }} className='icon' /></span></p>}
-                          {cost === '£31-50' && <p>{cost} <span><CurrencyPoundIcon sx={{ color: 'white', fontSize: 20 }} className='icon' /></span></p>}
-                          {cost === '£51-70' && <p>{cost} <span><CurrencyPoundIcon sx={{ color: 'white', fontSize: 25 }} className='icon' /></span></p>}
-                          {cost === '£71-90' && <p>{cost} <span><CurrencyPoundIcon sx={{ color: 'white', fontSize: 30 }} className='icon' /></span></p>}
-                          {cost === '£91-110' && <p>{cost} <span><CurrencyPoundIcon sx={{ color: 'white', fontSize: 35 }} className='icon' /></span></p>}
-                          {cost === '£111-150' && <p>{cost} <span><CurrencyPoundIcon sx={{ color: 'white', fontSize: 40 }} className='icon' /></span></p>}
-                          {cost === '£151-200' && <p>{cost} <span><CurrencyPoundIcon sx={{ color: 'white', fontSize: 45 }} className='icon' /></span></p>}
-                          {cost === '£201-250' || cost === '£251-300' || cost === '£301-350' || cost === '£351-400' || cost === '£401-500' && <p>Could be a bit pricey... <span><CurrencyPoundIcon sx={{ color: 'white', fontSize: 50 }} className='icon' /></span></p>}
+                          <PricesSingle cost={cost} />
                         </>
                       )
                     })
@@ -176,8 +151,6 @@ const SingleMusical = () => {
               }
             </div>
           </div>
-          {/* <img className='action-image' src={musical.picture_2} />
-          <img className='action-image' src={musical.picture_3} /> */}
         </>
         :
         <Spinner />

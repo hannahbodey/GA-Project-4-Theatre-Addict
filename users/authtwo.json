@@ -1,0 +1,203 @@
+[
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$x9DZLoYHecvuMZ4Ddylg7k$Syzo+G2JmXk6Kpx2sRUi4hGkSl6GkizAdvRcyl/JHMM=",
+    "last_login": "2023-04-20T08:07:02.438Z",
+    "is_superuser": true,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-04-14T12:15:55Z",
+    "username": "Hannah",
+    "email": "hannah@email.com",
+    "profileimage": "https://res.cloudinary.com/dh6nrt6pu/image/upload/v1682000101/Project-3/beuyzfsnxq5jj7201cp6.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 4,
+  "fields": {
+    "password": "elphaba",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-04-21T15:12:43Z",
+    "username": "Elphaba",
+    "email": "elphaba@email.com",
+    "profileimage": "https://pyxis.nymag.com/v1/imgs/639/630/94a91431dc2f71f5cfd5b5c391d65bbab0-wicked-understudy.rsquare.w330.jpg",
+    "groups": [],
+    "user_permissions": [
+      32,
+      41,
+      44,
+      28,
+      36,
+      37,
+      40
+    ]
+  }
+},
+{
+  "model": "users.user",
+  "pk": 5,
+  "fields": {
+    "password": "eurydice",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-04-21T15:14:20Z",
+    "username": "Eurydice",
+    "email": "eurydice@email.com",
+    "profileimage": "https://imageio.forbes.com/specials-images/imageserve/61cdba1ba3d6a658d555466d/0x0.jpg?format=jpg&width=1200",
+    "groups": [],
+    "user_permissions": [
+      32,
+      41,
+      44,
+      28,
+      36,
+      37,
+      40
+    ]
+  }
+},
+{
+  "model": "users.user",
+  "pk": 6,
+  "fields": {
+    "password": "christine",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-04-21T15:15:14Z",
+    "username": "Christine",
+    "email": "christine@email.com",
+    "profileimage": "https://www.washingtonpost.com/resizer/aU_k5y27uiSJfK-yCRjS__fhtTQ=/arc-anglerfish-washpost-prod-washpost/public/4WKUWSXF6REF7E3Q2FQNQJMLRQ.JPG",
+    "groups": [],
+    "user_permissions": [
+      32,
+      41,
+      44,
+      28,
+      36,
+      37,
+      40
+    ]
+  }
+},
+{
+  "model": "users.user",
+  "pk": 7,
+  "fields": {
+    "password": "hamilton",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-04-21T15:16:04Z",
+    "username": "Hamilton",
+    "email": "hamilton@email.com",
+    "profileimage": "https://i.guim.co.uk/img/media/611c74f4533083450171c9b974b41eacdc9ccf30/344_198_2324_1394/master/2324.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=25204c640b588165b4d5e63f711e623d",
+    "groups": [],
+    "user_permissions": [
+      32,
+      41,
+      44,
+      28,
+      36,
+      37,
+      40
+    ]
+  }
+},
+{
+  "model": "users.user",
+  "pk": 8,
+  "fields": {
+    "password": "orpheus",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-04-21T15:16:42Z",
+    "username": "Orpheus",
+    "email": "orpheus@email.com",
+    "profileimage": "https://64.media.tumblr.com/f06ca3e436d796b0e74d81294fafb80f/b9640ba32e899840-3a/s1280x1920/58c0c20e7c348ca1e6dbbce34c2df0706b123f14.jpg",
+    "groups": [],
+    "user_permissions": [
+      41,
+      44,
+      28,
+      36,
+      20,
+      37,
+      40
+    ]
+  }
+},
+{
+  "model": "users.user",
+  "pk": 9,
+  "fields": {
+    "password": "jeanvaljean",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-04-21T15:17:56Z",
+    "username": "Valjean",
+    "email": "valjean@email.com",
+    "profileimage": "https://i2-prod.walesonline.co.uk/incoming/article4695242.ece/ALTERNATES/s615/colm.jpg",
+    "groups": [],
+    "user_permissions": [
+      32,
+      41,
+      44,
+      28,
+      36,
+      37,
+      38,
+      40
+    ]
+  }
+},
+{
+  "model": "users.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$grMjvddrGfmzotUHA6UcXn$ygzp9St5qDIZa9Jf1FjtMvTZLUvIxsii+LH0kLhvPKE=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-04-24T09:56:13.323Z",
+    "username": "Fagin",
+    "email": "fagin@email.com",
+    "profileimage": "https://res.cloudinary.com/dh6nrt6pu/image/upload/v1682330144/Project-3/xaju7zcgcoo9y0baujv3.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

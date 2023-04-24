@@ -11,7 +11,6 @@ const Profile = () => {
     email: '',
     profileimage: '',
     password: '',
-    // passwordconfirmation: '',
   }
   )
   const [error, setError] = useState('')
@@ -65,7 +64,7 @@ const Profile = () => {
       removeToken()
     } catch (error) {
       console.log(error)
-      setError(error.response.data.message)
+      setError(error.response.data.detail)
     }
   }
 
@@ -77,7 +76,7 @@ const Profile = () => {
         setUpdatedProfile(data)
       } catch (error) {
         console.log(error)
-        setError(error.response.data.message)
+        setError(error.response.data.detail)
       }
     }
     getProfile()
@@ -90,7 +89,7 @@ const Profile = () => {
         setMessages(data)
       } catch (error) {
         console.log(error)
-        setError(error.response.data.message)
+        setError(error.response.data.detail)
       }
     }
     getMessages()
@@ -111,14 +110,10 @@ const Profile = () => {
               <input type='text' name='username' placeholder={updatedProfile.username ? updatedProfile.username : profile[0].username} onChange={handleChange} value={updatedProfile.username}/>
               <label htmlFor='email'></label>
               <input type='email' name='email' placeholder={updatedProfile.email ? updatedProfile.email : profile[0].email} onChange={handleChange} value={updatedProfile.email} />
-              {/* <label htmlFor='password'></label>
-              <input type='password' name='password' placeholder='Type password to confirm' onChange={handleChange} value={updatedProfile.password} />
-              <label htmlFor='passwordconfirmation'></label>
-              <input type='password' name='passwordconfirmation' placeholder='Confirm new password' onChange={handleChange} value={updatedProfile.passwordconfirmation} /> */}
               <button className='button-common register-button changes-button'>Submit your changes</button>
-              {error && <p>Error: {error}</p>}
+              {error && <p className='error'>Error: {error}</p>}
               <button className='button-common register-button changes-button' onClick={handleClick}>View your messages: {messages.length} messages</button>
-              <button className='button-common register-button delete-button' onClick={handleDelete}>Delete account</button>
+              <button className='button-common register-button changes-button delete-button' onClick={handleDelete}>Delete account</button>
             </form>
           </div>
         </>

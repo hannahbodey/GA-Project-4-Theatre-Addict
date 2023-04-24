@@ -33,6 +33,7 @@ class LogInView(APIView):
         email = request.data['email']
         password = request.data['password']
         user_to_login = User.objects.get(email=email)
+        # Creating users on django admin means that they can't be logged in because the password is not hashed. For demo this afternoon, I'm going to remove the check, but will add it back in afterwards. 
         # if not user_to_login.check_password(password):
         #     raise PermissionDenied('Unauthorized')
         dt = datetime.now() + timedelta(days=7)

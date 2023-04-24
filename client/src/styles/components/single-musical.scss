@@ -49,17 +49,10 @@
         position: absolute;
         top: 0;
         left: 0;
-        // margin-bottom: 0.25rem;
       }
     }
   }
 }
-
-// @media (min-width: 768px) and (max-width: 820px) {
-//   .comments-tickets-container {
-//     margin-top: 40%;
-//   }
-// }
 
 @media (min-width: 769px) and (max-width: 900px) {
   .main-container {
@@ -101,30 +94,17 @@
 .title-logo-container {
   display: flex;
   justify-content: space-between;
-  // align-items: center;
   text-align: center;
   height: 20rem;
   background-repeat: no-repeat;
   background-size: cover;
-  // background: rgb(1,0,11);
-  // background: linear-gradient(90deg, rgba(1,0,11,1) 0%, rgba(168,22,22,1) 35%, rgba(254,174,0,1) 100%);
-  // border-radius: 1rem;
-
-  // border: 0.5rem solid rgba(0,0,0,0.5);
   .logo-image {
     @extend %musical-logo;
     transition: all 0.6s ease-in-out, outline 0.6s ease-in-out;
-
     &:hover {
       outline: solid #fff;
       outline-width: 0.25rem;
     }
-
-    // max-width: 10rem;
-    // max-height: 8.5rem;
-    // border-radius: 5rem;
-    // box-shadow: 0 0.75rem 0.75rem rgba(0,0,0,0.8);
-    // margin: 0.5rem;
   }
 
   .title-container {

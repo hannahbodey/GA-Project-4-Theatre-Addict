@@ -30,8 +30,8 @@ const LogIn = () => {
       navigate(musicalpage)
       localStorage.removeItem('musical-page')
     } catch (error) {
-      console.log(error)
-      setError(error.response.data.message)
+      console.log(error.response.data)
+      setError(error)
     }
   }
 
@@ -49,7 +49,7 @@ const LogIn = () => {
           <input type='password' name='password' placeholder='Password' onChange={handleChange} value={formFields.password} />
         </div>
         <button className='register-button button-common'>Log In</button>
-        {error && <p>Error: {error}</p>}
+        {error && <p className='error'>Error: {error.response.data.detail}</p>}
       </form>
       <ImageCarousel />
     </main>
