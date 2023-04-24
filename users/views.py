@@ -20,8 +20,13 @@ class RegisterView(APIView):
         user_to_add = UserSerializer(data=request.data)
         user_to_add.is_valid(raise_exception=True)
         user_to_add.save()
-        return Response(user_to_add.data, status.HTTP_201_CREATED)
-    
+        email = request.data['email']
+        user_to_login = User.objects.get(email=email)
+        dt = datetime.now() + timedelta(days=7)
+        token = jwt.encode({ 'sub': user_to_login.id, 'exp': int(dt.strftime('%s')) }, settings.SECRET_KEY, algorithm='HS256')
+        return Response({ 'username': user_to_login.username, 'token': token }, status.HTTP_201_CREATED)
+    # return Response(user_to_add.data, status.HTTP_201_CREATED)
+
 class LogInView(APIView):
     @exceptions
     def post(self, request):
@@ -33,7 +38,7 @@ class LogInView(APIView):
         dt = datetime.now() + timedelta(days=7)
         token = jwt.encode({ 'sub': user_to_login.id, 'exp': int(dt.strftime('%s')) }, settings.SECRET_KEY, algorithm='HS256')
         return Response({ 'message': f'Welcome back, {user_to_login.username}', 'token': token, 'username': user_to_login.username })
-    
+
 class ProfileView(APIView):
     permission_classes =  (IsAuthenticated, )
     @exceptions
@@ -41,7 +46,6 @@ class ProfileView(APIView):
         user_to_display = User.objects.filter(id=request.user.id)
         serialized_user = UserSerializer(user_to_display, many=True)
         return Response(serialized_user.data)
-    
 
 class UpdateProfileView(APIView):
     permission_classes = (IsAuthenticated, )
@@ -54,3 +58,10 @@ class UpdateProfileView(APIView):
         serialized_user.is_valid(raise_exception=True)
         serialized_user.save()
         return Response(serialized_user.data, status.HTTP_202_ACCEPTED)
+
+    def delete(self, request, pk):
+        user_to_delete = User.objects.get(pk=pk)
+        if user_to_delete != request.user and not request.user.is_staff:
+            raise PermissionDenied()
+        user_to_delete.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)

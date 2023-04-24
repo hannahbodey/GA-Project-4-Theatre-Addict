@@ -25,7 +25,10 @@ const Register = () => {
     console.log(formFields)
     e.preventDefault()
     try {
-      await axios.post('/api/auth/register/', formFields)
+      const { data } = await axios.post('/api/auth/register/', formFields)
+      localStorage.setItem('THEATRE-PROJECT-TOKEN', data.token)
+      const currentUser = data.username
+      localStorage.setItem('current user', currentUser)
       const musicalpage = localStorage.getItem('musical-page')
       navigate(musicalpage)
       localStorage.removeItem('musical-page')

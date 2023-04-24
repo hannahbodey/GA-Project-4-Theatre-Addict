@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import BackButton from '../common/BackArrow'
-import { userTokenFunction } from '../../helpers/auth'
+import { removeToken, userTokenFunction } from '../../helpers/auth'
 import { useNavigate } from 'react-router-dom'
 
 const Profile = () => {
@@ -58,6 +58,17 @@ const Profile = () => {
     navigate('/messages')
   }
 
+  const handleDelete = async () => {
+    try {
+      const { data } = await axios.delete(`/api/auth/profile/${profile[0].id}/`, userToken)
+      navigate('/musicals')
+      removeToken()
+    } catch (error) {
+      console.log(error)
+      setError(error.response.data.message)
+    }
+  }
+
   useEffect(() => {
     const getProfile = async () => {
       try {
@@ -107,6 +118,7 @@ const Profile = () => {
               <button className='button-common register-button changes-button'>Submit your changes</button>
               {error && <p>Error: {error}</p>}
               <button className='button-common register-button changes-button' onClick={handleClick}>View your messages: {messages.length} messages</button>
+              <button className='button-common register-button delete-button' onClick={handleDelete}>Delete account</button>
             </form>
           </div>
         </>

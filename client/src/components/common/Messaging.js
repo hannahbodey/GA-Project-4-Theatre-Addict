@@ -12,6 +12,8 @@ const Messaging = ({ value }) => {
   const [profile, setProfile] = useState([])
   const [error, setError] = useState('')
   const [response, setResponse] = useState(false)
+  const [active, setIsActive] = useState(true)
+  const delay = 10000
   const userToken = userTokenFunction()
 
   const handleChange = (e) => {
@@ -32,6 +34,13 @@ const Messaging = ({ value }) => {
     getUser()
   }, [])
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsActive(false)
+    }, delay)
+    return () => clearInterval(interval)
+  }, [response])
+
   const handleSubmit = async (e) => {
     setFormFields({ ...formFields, recipient: value })
     e.preventDefault()
@@ -45,7 +54,7 @@ const Messaging = ({ value }) => {
   }
 
   return (
-    <form className='send-message' onSubmit={handleSubmit}>
+    <form className={active ? 'send-message' : 'send-message hidden'} onSubmit={handleSubmit}>
       <label htmlFor='message'></label>
       <input type='text' name='message' placeholder='Enter message' onChange={handleChange} value={formFields.message} />
       <button className={response ? 'button-comment sent' : 'button-comment'}>{response ? <span>Message sent!</span> : <span>Send message</span>}</button>
