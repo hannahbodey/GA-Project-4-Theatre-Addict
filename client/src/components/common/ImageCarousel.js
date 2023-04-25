@@ -20,7 +20,7 @@ const ImageCarousel = () => {
 
   return (
     <div className='form-carousel'>
-      <Carousel autoPlay={true} infiniteLoop={true} showArrows={false} showStatus={false} showIndicators={false} showThumbs={false} interval={5000} >
+      <Carousel autoPlay={true} infiniteLoop={true} showArrows={false} showStatus={false} showIndicators={false} showThumbs={false} interval={3000} >
         {pictures.length > 0 ?
           pictures.map((item, index) => {
             const { id } = item
