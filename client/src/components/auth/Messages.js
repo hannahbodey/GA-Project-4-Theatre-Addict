@@ -91,9 +91,15 @@ const Messages = () => {
           </div>
         </div>
         :
-        <p>no messages here</p>
+        <div>
+          <h3 className='profile-title'>Your messages:</h3>
+          <BackButton />
+          <div className='messages-container'>
+            <p>no messages here</p>
+          </div>
+        </div>
       }
-    </div>
+    </div >
   )
 }
 
