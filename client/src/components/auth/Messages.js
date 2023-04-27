@@ -95,7 +95,9 @@ const Messages = () => {
           <h3 className='profile-title'>Your messages:</h3>
           <BackButton />
           <div className='messages-container'>
-            <p>You have not yet sent any messages!</p>
+            <div className='message-box'>
+              <p className='username-box'>You have not yet sent any messages!</p>
+            </div>
           </div>
         </div>
       }
