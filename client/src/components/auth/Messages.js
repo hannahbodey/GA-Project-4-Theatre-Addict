@@ -96,7 +96,7 @@ const Messages = () => {
           <BackButton />
           <div className='messages-container'>
             <div className='message-box'>
-              <p>You have not yet sent any messages!</p>
+              <p className='username-box'>You have not yet sent any messages!</p>
             </div>
           </div>
         </div>
