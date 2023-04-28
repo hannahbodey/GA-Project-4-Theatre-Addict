@@ -9,8 +9,16 @@ import EditComment from './components/musicals/EditComment'
 import Home from './components/Home'
 import Footer from './components/common/Footer'
 import Messages from './components/auth/Messages'
+import { useEffect } from 'react'
+import icon from './images/favicon.ico'
 
 const App = () => {
+
+  useEffect(() => {
+    const favicon = document.getElementById('favicon')
+    favicon.setAttribute('href', icon)
+  }, [])
+
   return (
     <div className='site-wrapper'>
       <BrowserRouter>
