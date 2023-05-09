@@ -88,7 +88,7 @@ I also used Trello to monitor tasks to complete, and had it split up based on th
  
 To see the wireframe in detail, please click this link: https://www.figma.com/file/N7L0BqL9s9qxPRh0MjEk3z/Theatre_trips_tool?node-id=0-1&t=ms39yBgTpWnResGb-0 
 
-### Build/Code Process
+### Build / Code Process
 
 I started by working through the back-end of my project, building up the various models and views. I wanted to ensure that all views were working before starting to connect the front-end, which is something that I tested using Insomnia. 
 
@@ -147,7 +147,7 @@ There were key goals for this project that I wanted to meet:
 -	Ensuring that the user was logged straight in on registering a new account, and also that once they had logged in, they were taken straight back to the musical page where they had been about to make a comment, was very important to my user journey. I used local storage to achieve the control over which component was shown, and this successfully and smoothly controlled the user’s placement on the site. I also wanted to ensure that the musicals could all be viewed without a user logging in, in order to improve the user journey through the site. 
 -	I also only decided to add the messaging feature on the penultimate day of the project, so I was very pleased that I got it completed and working within one day.
 
-### Key Learnings/Takeaways
+### Key Learnings and Takeaways
 
 There are a few key things that I learnt whilst doing this project:
 -	As stated above, I used local storage quite a lot in order to support movement between specific musical pages and user pages, and this was very useful for ensuring that the user journey made sense.
