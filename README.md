@@ -20,25 +20,35 @@ This was a solo project, completed in the final week and a half (weeks 11-12) of
  
 *Back End:
 
-Python
-Django
-Django REST Framework
-PostgreSQL
-JSON web tokens
+-Python
+
+-Django
+
+-Django REST Framework
+
+-PostgreSQL
+
+-JSON web tokens
 
 *Front End:
 
-JavaScript
-React
-HTML
-CSS
-Sass
+-JavaScript
+
+-React
+
+-HTML
+
+-CSS
+
+-Sass
 
 *Development Tools:
 
-Excalidraw
-Trello
-Table Plus 
+-Excalidraw
+
+-Trello
+
+-Table Plus 
 
 ### Brief
 
